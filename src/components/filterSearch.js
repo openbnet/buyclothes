@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const FilterSearch = (props) => {
-
+    console.log(props)
     return (
         <section className="style1 search-bar">
             <div className="container">
