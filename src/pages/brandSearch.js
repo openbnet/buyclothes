@@ -46,7 +46,6 @@ class BrandSearch extends Component {
                 <FilterSearch brand={this.getBrand}/>
                 <BrandList items={
                     (this.state.filtered.length === 0 && this.state.keyword.length === 0)? this.state.brands : this.state.filtered}> <h2> A. </h2> </BrandList>
-                    {/* <BrandList items = {this.state.brands}/> */}
             </div>
         )
     }
