@@ -1,0 +1,435 @@
+
+/* Custom styles */
+.row{
+    padding: 1em 0;
+}
+
+/* nav */
+
+#nav {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 70em;
+    padding: 1em 0;
+    cursor: default;
+}
+#nav .brand {
+    text-align: left;
+    text-transform: none;
+}
+#nav .brand-col{
+    align-self: center
+}
+#nav .contact-us-button{
+    float:	right;
+    padding: 0.55em 1.75em 0.55em 1.75em
+}
+
+
+/* landing-page */
+#landing-page{
+    background: white;
+    font-family: Helvetica;
+}
+
+#landing-page .hashtag{
+    font-family: Helvetica;
+    line-height: normal;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #000000;
+}
+#landing-page .box-1 .content{
+    text-align: center;
+    margin: 10em 5em;
+}
+#landing-page .box-1 .content p{
+    font-family: Helvetica;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+#landing-page .box-1 .content a{
+    border-radius: 24px;
+    background: #FF6B00;
+    color: white !important;
+}
+
+#landing-page .box-1 .details{
+    float:left;
+}
+
+#landing-page .box-1 .flower-dress{
+    float:right;
+}
+
+/* #landing-page .box-1 .flower-dress img{
+    width: 100%;
+    height: auto;
+} */
+
+/* box-2 */
+
+#landing-page .box-2 {
+    background: #FF6B00;
+}
+
+#landing-page .box-2 .service{
+    color: #FFFFFF !important;
+    margin: 20px;
+}
+
+#landing-page .box-2 .service .text{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+#landing-page .box-2 .service ul{
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+#landing-page .box-2 .col-6{
+    padding: 15px;
+}
+#landing-page .box-2 .purple-dress img{
+    width: auto;
+    height: 449px;
+    max-width: 100%;
+}
+
+/* box-3 */
+#landing-page .box-3{
+    text-align: center;
+    padding: 40px;
+}
+
+#landing-page .box-3 h2{
+    color: #FF6B00;
+    margin-bottom: 0;
+}
+#landing-page .box-3 .pricing{
+    grid-gap: 0;
+    line-height: normal;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #000000;
+    width: 100%;
+}
+
+#landing-page .box-3 .pricing .right{
+    text-align: left;
+    padding-left: 10px;
+}
+
+#landing-page .box-3 .pricing .left{
+    margin-left: -50px;
+    text-align: right;
+    border-right:  1px solid black;
+    padding-right: 10px;
+}
+
+#landing-page .box-3 .note-1 {
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
+    padding: 0 25%;
+    text-align: center;
+    border-bottom: 1px solid #FF6B00;
+    padding-bottom: 50px;
+}
+
+/* box-4 */
+#landing-page .box-4 .sparkle-girls img{
+    width: auto;
+    height: 700px;
+    max-width: 100%;
+}
+
+#landing-page .box-4 .content{
+    text-align: center;
+    margin: 5em 0;
+}
+
+#landing-page .box-4 .content h2{
+    color: #FF6B00;
+    font-weight: bold;
+    text-align: left;
+}
+
+#landing-page .box-4 .content ol{
+    margin-left: 1em;
+}
+
+#landing-page .box-4 .content ol > li {
+    text-align: left;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-family: Helvetica;
+    padding-left: 0;
+}
+
+#landing-page .box-4 .content .note-2{
+    text-align: left;
+}
+
+/* box-5 */
+#landing-page .box-5 {
+    height: 896px;
+    margin-bottom: 3em;
+    background-image: url(../images/4.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+}
+
+#landing-page .box-5 .content{
+    width: 60em;
+}
+
+#landing-page  .box-5 .content h2{
+    position: relative;
+    color: #FF6B00;
+    font-weight: bold;
+    text-align: left;
+    top: 50px;
+    left: 50px;
+}
+
+#landing-page  .box-5 .content .brandings{
+    position: relative;
+    top: 300px;
+    left: 50px;
+    width: 790px;
+    height: 407px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 9% 9% 0 9%;
+}
+#landing-page .box-5 .content .brandings .row.grid-wrapper{
+    grid-gap: 0;
+    width: 100%;
+}
+#landing-page .box-5 .content .brandings .col-3{
+    height: 40px;
+    width: 121px;
+    margin: 10%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#landing-page .box-5 .content .brandings .logo1{
+    background-image: url(../images/logo1.png);
+}
+
+#landing-page .box-5 .content .brandings .logo2{
+    background-image: url(../images/logo2.png);
+}
+
+#landing-page .box-5 .content .brandings .logo3{
+    background-image: url(../images/logo3.png);
+}
+
+#landing-page .box-5 .content .brandings .logo4{
+    background-image: url(../images/logo4.png);
+}
+
+#landing-page .box-5 .content .brandings .logo5{
+    background-image: url(../images/logo5.png);
+}
+
+#landing-page .box-5 .content .brandings .logo6{
+    background-image: url(../images/logo6.png);
+}
+
+#landing-page .box-5 .content .brandings .logo7{
+    background-image: url(../images/logo7.png);
+}
+
+#landing-page .box-5 .content .brandings .logo8{
+    background-image: url(../images/logo8.png);
+}
+
+#landing-page .box-5 .content .brandings .logo9{
+    background-image: url(../images/logo9.png);
+}
+
+#landing-page .box-5 .content .brandings .logo10{
+    background-image: url(../images/logo10.png);
+}
+
+#landing-page .box-5 .content .brandings .logo11{
+    background-image: url(../images/logo11.png);
+}
+
+#landing-page .box-5 .content .brandings .logo12{
+    background-image: url(../images/logo12.png);
+}
+#landing-page .box-5 .content .brandings .view-more{
+    text-align: right;
+    width: 100%;
+}
+#landing-page .box-5 .content .brandings .view-more a{
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #FF6B00;    
+}
+
+/* box-6 */
+#landing-page .box-6 h2{
+    color: #FF6B00;
+    text-align: center;
+}
+#landing-page .box-6 .content .clothes-picture img{
+    width: 486px;
+    height: 692px;
+}
+
+
+#landing-page .box-6 .content .clothes-details{
+    margin: 10px 0;
+}
+
+#landing-page .box-6 .content .clothes-details .title{
+    line-height: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#landing-page .box-6 .content .clothes-details .info{
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #000000;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+#landing-page .box-6 .content .clothes-details .price{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+#landing-page .box-6 hr{
+    height: 1px;
+    border: 0;
+    margin: 2em 25%;
+    padding: 1px;
+    background-color: #FF6B00;
+}
+
+/* box-7 */
+#landing-page .box-7 .content .title {
+    padding: 3% 25%;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FF6B00;
+}
+
+#landing-page .box-7 .content .submit-button{
+    text-align: center;
+    margin: 15px;
+}
+
+#landing-page .box-7 .content .submit-button a{
+    border-radius: 10px;
+    padding: 0.35em 1.75em 0.35em 1.75em;
+    color: #FF6B00;
+}
+
+#landing-page .box-7 .content .address{
+    padding: 0 70px;
+    color: black;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+#landing-page .box-7 .content .address .map img{
+    height: auto;
+    width: 100%;
+}
+
+/* box-8 */
+#landing-page .box-8{
+    height: 977px;
+}
+#landing-page .box-8 .content{
+    background-image: url(../images//5.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#landing-page .box-8 .content div{
+    position: relative;
+    top: 35%;
+    padding: 0 30%;
+    text-align: center;
+}
+#landing-page .box-8 .title{
+    line-height: 70px;
+    font-size: 64px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+#landing-page .box-8 .content a{
+    background: #FF6B00 !important;
+    border-radius: 10px;
+    color: white !important;
+}
+
+
+
+/* brand-search-page*/
+#brandsearch-page .box-1 .contact-us-btn{
+    background: #FF6B00 !important;
+    border-radius: 10px;
+    color: white !important;
+    float: right;
+}
+
+/* search-bar */
+#brandsearch-page .search-bar h1{
+    text-align: center;
+    font-weight: bold;
+    color:black !important;
+}
+
+
+#brandsearch-page .form-control {
+    font-size: 2rem;
+    padding: 25px 15px;
+}
