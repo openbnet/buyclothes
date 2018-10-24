@@ -27,6 +27,15 @@
 	@include col-x-list;
 
 }
+@media screen and (max-width: 980px) {
+
+	.grid-wrapper {
+		display: grid;
+		grid-gap: 0 2.25em;
+		margin: 0 auto;
+		width: 90%;
+	}
+}
 
 @media screen and (min-width: 1141px) {
 
@@ -35,8 +44,40 @@
 		width: 60em;
 	}
 
-}
+	#landing-page .box-5{
+		height: 896px;
+		margin-bottom: 3em;
+	}
 
+	#landing-page .box-5 .content .brandings{
+		width: 790px;
+	}
+	
+	#landing-page .box-5 .content h2 {
+		position: relative;
+	}
+	
+	#landing-page  .box-5 .content .brandings{
+		position: relative;
+		top: 300px;
+		left: 50px;
+		height: 407px;
+		background: rgba(255, 255, 255, 0.9);
+		padding: 9% 9% 0 9%;
+	}
+
+	#landing-page .box-8{
+		height: 977px;
+	}
+
+	#landing-page .box-8 .title{
+		line-height: 70px;
+		font-size: 64px;
+		letter-spacing: 2px;
+		color: #FFFFFF;
+		margin-bottom: 30px;
+	}
+}
 @media screen and (max-width: 736px) {
 
 	.grid-wrapper {
@@ -51,10 +92,128 @@
 		margin-bottom: 1em;
 	}
 	#landing-page .box-1 .details .content p{
-		margin-bottom: .5em;
+		margin-bottom: 1.5em;
 	}
 	#landing-page .box-1 .details .content a{
 		margin-bottom: .5em;
 	}
 
+}
+
+@media screen and (max-width: 440px) {
+	#landing-page .box-1 .details .hashtag{
+		text-align: center !important;
+		font-size: 1em !important;
+	}
+
+	#landing-page .box-1 .details .content p{
+		font-size: 1.5em !important;
+		margin-bottom: .5em !important;
+	}
+
+	#landing-page .box-1 .details .content a{
+		font-size: 14px !important;
+		padding: 0em 1em !important;
+	}
+
+	#landing-page .box-2 .service .text{
+		font-size: 22px !important;
+		text-align: center !important;
+		line-height: 30px !important;
+	}
+
+	#landing-page .box-2 .service ul{
+		font-size: 18px !important;
+		line-height: 24px !important;
+		letter-spacing: 0 !important;
+	}
+
+	#landing-page .box-3 .note-1{
+		padding: 1em !important;
+	}
+
+	#landing-page .box-4 .image.fit{
+		margin: 1em 0;
+	}
+
+	#landing-page .box-4 .sparkle-girls img{
+		height: auto !important;
+		width: 100% !important;
+	}
+
+	#landing-page .box-4 .content{
+		margin: 0 !important;
+	}
+	
+	#landing-page .box-4 .content h2{
+		text-align: center !important;
+	}
+
+	#landing-page .box-4 .content ol li{
+		font-size: 14px !important;
+	}
+
+	#landing-page .box-4 .content .note-2 {
+		text-align: center !important;
+		line-height: 1em;
+		margin-bottom: 1em;
+	}
+
+	#landing-page .box-5 {
+     background-position: top !important;
+    background-repeat: no-repeat !important;
+	}
+
+	#landing-page .box-5 .content h2{
+		text-align: center !important;
+		top: 100px !important;
+		font-size: 30px !important;
+		left: 0 !important;
+		margin-top: 30%;
+	}
+
+	#landing-page .box-7 .content .address {
+		 padding: 0 !important;
+	}
+	#landing-page .box-5 .content .brandings .row.grid-wrapper{
+		display: none;
+		justify-content: center;
+		margin: 6em 0px;
+	}
+	#landing-page .box-6 h2{
+		font-weight: bold;
+		font-size: 32px;
+		padding: 1em 0 0 0;
+	}
+
+	#landing-page .box-6 .content .clothes-details .title{
+		font-size: 16px !important;
+		letter-spacing: 1px !important;
+	}
+
+	#landing-page .box-6 .content .clothes-picture img{		
+		width: 120px;
+		height: 194px;
+	}
+
+	#landing-page .box-7 .content .title{
+		padding: 3% 5% !important;
+	}
+
+	#landing-page .box-7 .content .address{
+		text-align: center;
+	}
+
+	#landing-page .box-8 .content div{
+		padding: 25px 30% !important;
+	}
+
+	#landing-page .box-8 .title{	
+		color: #FFFFFF;
+	    font-size: 2em;
+	}
+
+	#landing-page .box-8 .content a{
+		padding: 0em 1em  !important;
+	}
 }

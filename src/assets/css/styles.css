@@ -79,6 +79,10 @@
     background: #FF6B00;
 }
 
+#landing-page .box-2 .grid-wrapper{
+    width: 90vw;
+}
+
 #landing-page .box-2 .service{
     color: #FFFFFF !important;
     margin: 20px;
@@ -109,10 +113,14 @@
 #landing-page .box-2 .col-6{
     padding: 15px;
 }
+
 #landing-page .box-2 .purple-dress img{
-    width: auto;
-    height: 449px;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+#landing-page .box-2 .image.fit{
+    margin: 0;
 }
 
 /* box-3 */
@@ -159,6 +167,11 @@
 }
 
 /* box-4 */
+#landing-page .box-4 .grid-wrapper{
+    grid-gap: 0;
+    width: 90vw;
+}
+
 #landing-page .box-4 .sparkle-girls img{
     width: auto;
     height: 700px;
@@ -196,8 +209,6 @@
 
 /* box-5 */
 #landing-page .box-5 {
-    height: 896px;
-    margin-bottom: 3em;
     background-image: url(../images/4.jpg);
     width: 100%;
     background-position: center;
@@ -205,11 +216,10 @@
 }
 
 #landing-page .box-5 .content{
-    width: 60em;
+    width: 90vw;
 }
 
 #landing-page  .box-5 .content h2{
-    position: relative;
     color: #FF6B00;
     font-weight: bold;
     text-align: left;
@@ -217,15 +227,6 @@
     left: 50px;
 }
 
-#landing-page  .box-5 .content .brandings{
-    position: relative;
-    top: 300px;
-    left: 50px;
-    width: 790px;
-    height: 407px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 9% 9% 0 9%;
-}
 #landing-page .box-5 .content .brandings .row.grid-wrapper{
     grid-gap: 0;
     width: 100%;
@@ -381,9 +382,7 @@
 }
 
 /* box-8 */
-#landing-page .box-8{
-    height: 977px;
-}
+
 #landing-page .box-8 .content{
     background-image: url(../images//5.jpg);
     width: 100%;
@@ -398,13 +397,7 @@
     padding: 0 30%;
     text-align: center;
 }
-#landing-page .box-8 .title{
-    line-height: 70px;
-    font-size: 64px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-}
+
 #landing-page .box-8 .content a{
     background: #FF6B00 !important;
     border-radius: 10px;
