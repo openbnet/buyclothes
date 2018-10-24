@@ -144,7 +144,7 @@ class Homepage extends React.Component {
                             </div>
                             <div className="row">
                                 <div className="view-more">
-                                    <a href="http://html5up.net">View more Brands ></a>
+                                    <a href="/brandSearch">View more Brands ></a>
                                 </div>
                             </div>
                         </div>
