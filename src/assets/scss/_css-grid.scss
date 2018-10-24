@@ -27,6 +27,17 @@
 	@include col-x-list;
 
 }
+@media screen and (min-width: 880px) {
+	#landing-page .box-3 .pricing{
+		font-size: 25px !important;
+		display: inline !important;
+	}
+	
+	#landing-page .box-3 .note-1{
+		padding: 15% 20% 5%  !important
+	}
+
+}
 @media screen and (max-width: 980px) {
 
 	.grid-wrapper {
@@ -34,6 +45,89 @@
 		grid-gap: 0 2.25em;
 		margin: 0 auto;
 		width: 90%;
+	}
+	
+	#landing-page .box-1 .details .content p{
+		margin-bottom: .5em;
+	}
+
+	#landing-page .box-1 .details .content a{
+		margin-bottom: 1.5em;
+	}
+	
+
+	#landing-page .box-3 .pricing{
+		font-size: 32px !important;
+		display: inline !important;
+	}
+
+	#landing-page .box-3 .pricing .left{
+		float: left;
+		width: 50%;
+		margin-left: 0 !important;
+	}
+
+	#landing-page .box-3 .pricing .right{
+		float: right;
+		width: 50%;
+		padding-left: 8px !important;
+	}
+
+	#landing-page .box-4 .content{
+		margin: 0 !important;
+	}
+
+	#landing-page .box-4 .sparkle-girls img{
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	#landing-page .box-4 .content h2{
+    	text-align: center !important;
+	}
+
+	#landing-page .box-4 .content .note-2{
+		text-align: center !important;
+	}
+
+	#landing-page .box-5 .content .brandings .row.grid-wrapper{
+		display: none;
+	}
+	
+	#landing-page .box-5 .content{
+		padding: 3em !important;
+	}
+	
+	#landing-page .box-6{
+		margin-top: 1em;
+	}
+	
+	#landing-page .box-6 .content .clothes-picture img{
+		width: 189px !important;
+		height: 316px !important;
+	}
+
+	#landing-page .box-8 .content a{
+		padding: 0em 1em  !important;
+	}
+	
+
+	#landing-page .box-8 .content div{
+		padding: 40px 30% !important;
+	}
+
+	#landing-page .box-8 .title{	
+		color: #FFFFFF;
+	    font-size: 2em;
+	}
+	
+
+	#landing-page .box-7 .content .title{
+		padding: 3% 5% !important;
+	}
+
+	#landing-page .box-7 .content .address{
+		text-align: center !important
 	}
 }
 
@@ -43,7 +137,6 @@
 		grid-gap: 0 3em;
 		width: 60em;
 	}
-
 	#landing-page .box-5{
 		height: 896px;
 		margin-bottom: 3em;
@@ -92,12 +185,103 @@
 		margin-bottom: 1em;
 	}
 	#landing-page .box-1 .details .content p{
-		margin-bottom: 1.5em;
-	}
-	#landing-page .box-1 .details .content a{
 		margin-bottom: .5em;
 	}
+	#landing-page .box-1 .details .content a{
+		margin-bottom: 1.5em;
+	}
 
+	#landing-page .box-2 .service .text{
+		text-align: center !important;
+	}
+
+	#landing-page .box-2 .service ul{
+		font-size: 18px !important;
+		line-height: 24px !important;
+		letter-spacing: 0 !important;
+	}
+
+	#landing-page .box-3 .pricing{
+		font-size: 17px !important;
+		display: inline !important;
+	}
+
+	#landing-page .box-3 .pricing .left{
+		float: left;
+		width: 50%;
+		margin-left: 0 !important;
+	}
+
+	#landing-page .box-3 .pricing .right{
+		float: right;
+		width: 50%;
+		padding-left: 8px !important;
+	}
+
+	#landing-page .box-3 h2{
+		font-size: 2em;
+	}
+
+	#landing-page .box-3 .note-1{
+		padding: 15% 20% 5%  !important
+	}
+
+	#landing-page .box-4 .content{
+		margin: 0 !important
+	}
+
+	#landing-page .box-4 .content ol > li{
+		font-size: 18px !important
+	}
+
+	#landing-page .box-4 .content .note-2{
+		text-align: center !important;
+	}
+
+	#landing-page .box-5 .content{
+		padding: 3em !important;
+	}
+	#landing-page .box-5 .content .brandings .row.grid-wrapper{
+		display: none;
+		justify-content: center;
+		margin: 6em 0px;
+	}
+
+	#landing-page .box-6{
+		margin-top: 1em;
+	}
+
+	#landing-page .box-6 .content .clothes-picture img{
+		width: 189px !important;
+		height: 316px !important;
+	}
+	
+	#landing-page .box-6 .content .clothes-details .title{
+		font-size: 18px !important;
+		letter-spacing: 2px !important;
+	}
+
+	#landing-page .box-6 .content .clothes-details .info{
+		font-size: 12px !important;
+	}
+
+	#landing-page .box-6 .content .clothes-picture img{		
+		width: 120px !important;
+		height: 194px !important;
+	}
+
+	#landing-page .box-7 .content .title{
+		padding: 3% 5% !important;
+	}
+
+	#landing-page .box-8 .title{
+		font-size: 24px !important;
+		color: #FFFFFF;
+	}
+
+	#landing-page .box-8 .content div{
+		padding: 5% 30% 3% !important
+	}
 }
 
 @media screen and (max-width: 440px) {
@@ -129,7 +313,25 @@
 	}
 
 	#landing-page .box-3 .note-1{
-		padding: 1em !important;
+		padding: 3em 1em !important;
+	}
+
+	#landing-page .box-3 .pricing{
+		font-size: 10px !important;
+		display: inline !important;
+	}
+
+	#landing-page .box-3 .pricing .left{
+		float: left;
+		width: 50%;
+		margin-left: 0 !important;
+	}
+
+	#landing-page .box-3 .pricing .right{
+		float: right;
+		width: 50%;
+		
+		padding-left: 8px !important;
 	}
 
 	#landing-page .box-4 .image.fit{
@@ -161,7 +363,6 @@
 
 	#landing-page .box-5 {
      background-position: top !important;
-    background-repeat: no-repeat !important;
 	}
 
 	#landing-page .box-5 .content h2{
@@ -192,8 +393,8 @@
 	}
 
 	#landing-page .box-6 .content .clothes-picture img{		
-		width: 120px;
-		height: 194px;
+		width: 120px !important;
+		height: 194px !important;
 	}
 
 	#landing-page .box-7 .content .title{

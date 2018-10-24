@@ -136,7 +136,6 @@
 #landing-page .box-3 .pricing{
     grid-gap: 0;
     line-height: normal;
-    font-size: 35px;
     letter-spacing: 2px;
     color: #000000;
     width: 100%;
@@ -213,6 +212,7 @@
     width: 100%;
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #landing-page .box-5 .content{
