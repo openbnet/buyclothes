@@ -18,7 +18,7 @@ import clothe4 from '../assets/images/4.4.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Clothes";
+        const siteTitle = "Figma";
         
         const params = {
             slidesPerView: 3,
@@ -125,28 +125,26 @@ class Homepage extends React.Component {
                     </div>
                 </div>
                 <div className="container box-5">
-                    <div className="row grid-wrapper content">
-                        <div className="col-4"> 
-                            <h2>Brands we buy.</h2>
-                            <div className="brandings">
-                                <div className="row grid-wrapper">
-                                    <div className="col-3 logo1"> </div>
-                                    <div className="col-3 logo2"> </div>
-                                    <div className="col-3 logo3"> </div>
-                                    <div className="col-3 logo4"> </div>
-                                    <div className="col-3 logo5"> </div>
-                                    <div className="col-3 logo6"> </div>
-                                    <div className="col-3 logo7"> </div>
-                                    <div className="col-3 logo8"> </div>
-                                    <div className="col-3 logo9"> </div>
-                                    <div className="col-3 logo10"> </div>
-                                    <div className="col-3 logo11"> </div>
-                                    <div className="col-3 logo12"> </div>
-                                </div>
-                                <div className="row">
-                                    <div className="view-more">
-                                        <a href="http://html5up.net">View more Brands ></a>
-                                    </div>
+                    <div className="row grid-wrapper content">  
+                        <h2>Brands we buy.</h2>
+                        <div className="brandings">
+                            <div className="row grid-wrapper">
+                                <div className="col-3 logo1"> </div>
+                                <div className="col-3 logo2"> </div>
+                                <div className="col-3 logo3"> </div>
+                                <div className="col-3 logo4"> </div>
+                                <div className="col-3 logo5"> </div>
+                                <div className="col-3 logo6"> </div>
+                                <div className="col-3 logo7"> </div>
+                                <div className="col-3 logo8"> </div>
+                                <div className="col-3 logo9"> </div>
+                                <div className="col-3 logo10"> </div>
+                                <div className="col-3 logo11"> </div>
+                                <div className="col-3 logo12"> </div>
+                            </div>
+                            <div className="row">
+                                <div className="view-more">
+                                    <a href="http://html5up.net">View more Brands ></a>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,11 @@
 /* CSS Grid */
+@media screen and (min-width: 1337px) {
+	#landing-page .box-4 .content{
+		
+		margin: 5em 0;
+	}
 
+}
 @media screen and (min-width: 981px) {
 
 	.grid-wrapper {
@@ -27,7 +33,7 @@
 	@include col-x-list;
 
 }
-@media screen and (min-width: 880px) {
+@media screen and (max-width: 880px) {
 	#landing-page .box-3 .pricing{
 		font-size: 25px !important;
 		display: inline !important;
@@ -57,7 +63,7 @@
 	
 
 	#landing-page .box-3 .pricing{
-		font-size: 32px !important;
+		// font-size: 32px !important;
 		display: inline !important;
 	}
 
@@ -90,12 +96,33 @@
 		text-align: center !important;
 	}
 
-	#landing-page .box-5 .content .brandings .row.grid-wrapper{
-		display: none;
-	}
-	
+
 	#landing-page .box-5 .content{
-		padding: 3em !important;
+		padding: 1em 0 !important;
+	}
+
+	#landing-page .box-5 .content h2{
+		text-align: center !important;
+		top: 100px !important;
+		font-size: 30px !important;
+		left: 0 !important;
+		margin-top: 1em;
+	} 
+
+	#landing-page .box-5 .content .brandings {
+		background: rgba(255, 255, 255, 0.9);
+	}
+	#landing-page .box-5 .content .brandings .row {
+		display: block;
+	}
+	#landing-page .box-5 .content .brandings .row .col-3{
+		display: inline-block;
+		height: 40px;
+		width: 170px;	
+		margin: 0.5em !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{
+		font-size: 24px !important;
 	}
 	
 	#landing-page .box-6{
@@ -137,6 +164,13 @@
 		grid-gap: 0 3em;
 		width: 60em;
 	}
+	#landing-page .box-3 .note-1{
+		font-size: 16px !important;
+		padding: 2% 13% !important;
+	}
+	#landing-page .box-3 .pricing{
+		font-size: 38px !important;
+	}
 	#landing-page .box-5{
 		height: 896px;
 		margin-bottom: 3em;
@@ -147,17 +181,17 @@
 	}
 	
 	#landing-page .box-5 .content h2 {
-		position: relative;
+		position: absolute	;
+		margin: 3em;
 	}
 	
 	#landing-page  .box-5 .content .brandings{
 		position: relative;
 		top: 300px;
-		left: 50px;
+		left: 200px;
 		height: 407px;
 		background: rgba(255, 255, 255, 0.9);
-		padding: 9% 9% 0 9%;
-	}
+		padding: 9% 9% 0 9%;	}
 
 	#landing-page .box-8{
 		height: 977px;
@@ -186,6 +220,7 @@
 	}
 	#landing-page .box-1 .details .content p{
 		margin-bottom: .5em;
+		font-size: 24px;
 	}
 	#landing-page .box-1 .details .content a{
 		margin-bottom: 1.5em;
@@ -223,7 +258,8 @@
 	}
 
 	#landing-page .box-3 .note-1{
-		padding: 15% 20% 5%  !important
+		padding: 15% 20% 5%  !important;
+		font-size: 12px !important;
 	}
 
 	#landing-page .box-4 .content{
@@ -238,15 +274,37 @@
 		text-align: center !important;
 	}
 
-	#landing-page .box-5 .content{
-		padding: 3em !important;
-	}
-	#landing-page .box-5 .content .brandings .row.grid-wrapper{
-		display: none;
-		justify-content: center;
-		margin: 6em 0px;
+	#landing-page .box-5 {
+		background-position: top !important;
 	}
 
+	#landing-page .box-5 .content{
+		padding: 1em 0 !important;
+	}
+
+	#landing-page .box-5 .content h2{
+		text-align: center !important;
+		top: 100px !important;
+		font-size: 30px !important;
+		left: 0 !important;
+		margin-top: 1em;
+	} 
+
+	#landing-page .box-5 .content .brandings {
+		background: rgba(255, 255, 255, 0.9);
+	}
+	#landing-page .box-5 .content .brandings .row {
+		display: block;
+	}
+	#landing-page .box-5 .content .brandings .row .col-3{
+		display: inline-block;
+		height: 34px;
+		width: 111px;
+		margin: 0.5em !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{
+		font-size: 20px !important;
+	}
 	#landing-page .box-6{
 		margin-top: 1em;
 	}
@@ -316,6 +374,10 @@
 		padding: 3em 1em !important;
 	}
 
+	#landing-page .box-3 h2{
+		font-size: 1.5em;
+	}
+
 	#landing-page .box-3 .pricing{
 		font-size: 10px !important;
 		display: inline !important;
@@ -324,14 +386,13 @@
 	#landing-page .box-3 .pricing .left{
 		float: left;
 		width: 50%;
-		margin-left: 0 !important;
+		margin-left: -15px !important;
 	}
 
 	#landing-page .box-3 .pricing .right{
 		float: right;
 		width: 50%;
-		
-		padding-left: 8px !important;
+		padding-left: 0px !important;
 	}
 
 	#landing-page .box-4 .image.fit{
@@ -365,22 +426,39 @@
      background-position: top !important;
 	}
 
+	#landing-page .box-5 .content{
+		padding: 1em 0 !important;
+	}
+
 	#landing-page .box-5 .content h2{
 		text-align: center !important;
 		top: 100px !important;
 		font-size: 30px !important;
 		left: 0 !important;
-		margin-top: 30%;
+		margin-top: 1em;
 	}
-
-	#landing-page .box-7 .content .address {
-		 padding: 0 !important;
+	
+	#landing-page .box-5 .content .brandings {
+		background: rgba(255, 255, 255, 0.9);
 	}
-	#landing-page .box-5 .content .brandings .row.grid-wrapper{
-		display: none;
+	#landing-page .box-5 .content .brandings .row{
+		// display: none;
 		justify-content: center;
-		margin: 6em 0px;
+		display: block !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
 	}
+	#landing-page .box-5 .content .brandings .row .col-3{
+		display: inline-block;
+		height: 20px;
+		width: 42px;
+		margin: .5em !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{
+		font-size: 16px !important;
+	}
+	
 	#landing-page .box-6 h2{
 		font-weight: bold;
 		font-size: 32px;
@@ -396,7 +474,9 @@
 		width: 120px !important;
 		height: 194px !important;
 	}
-
+	#landing-page .box-7 .content .address {
+		padding: 0 !important;
+	}
 	#landing-page .box-7 .content .title{
 		padding: 3% 5% !important;
 	}
@@ -416,5 +496,75 @@
 
 	#landing-page .box-8 .content a{
 		padding: 0em 1em  !important;
+	}
+}
+
+@media screen and (max-width: 370px) {
+
+	#landing-page .box-3{
+		padding: 15px 5px !important
+	}
+
+	#landing-page .box-3 .note-1{
+		margin: 2% 0% -7%;
+		padding: 15% 0 4% 0 !important;
+		font-size: 10px !important;
+	}
+
+	
+	#landing-page .box-5 .content{
+		padding: 0.5em 0 !important;
+	}
+
+	#landing-page .box-5 .content h2{
+		text-align: center !important;
+		top: 100px !important;
+		font-size: 30px !important;
+		left: 0 !important;
+		margin-top: 1em;
+	} 
+
+	#landing-page .box-5 .content .brandings {
+		background: rgba(255, 255, 255, 0.9);
+	}
+	#landing-page .box-5 .content .brandings .row {
+		display: block;
+	}
+	#landing-page .box-5 .content .brandings .row .col-3{
+		display: inline-block;
+		height: 15px;
+		width: 43px;
+		margin: 0.3em !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{
+		font-size: 14px !important;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+
+	#landing-page .box-5 .content{
+		padding: 0.5em 0 !important;
+	}
+
+	#landing-page .box-5 .content h2{
+		margin: .5em !important;
+	} 
+
+	#landing-page .box-5 .content .brandings {
+		background: rgba(255, 255, 255, 0.9);
+	}
+	#landing-page .box-5 .content .brandings .row {
+		display: block;
+	}
+	#landing-page .box-5 .content .brandings .row .col-3{
+		display: inline-block;
+		height: 15px;
+		width: 38px;
+		margin: 0.3em !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{
+		font-size: 12px !important;
 	}
 }

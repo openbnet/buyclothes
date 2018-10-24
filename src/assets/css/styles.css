@@ -42,15 +42,16 @@
 }
 #landing-page .box-1 .content{
     text-align: center;
-    margin: 10em 5em;
+    margin: 10em 0;
 }
 #landing-page .box-1 .content p{
     font-family: Helvetica;
     line-height: normal;
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
     letter-spacing: 2px;
     color: #000000;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 
@@ -159,7 +160,7 @@
     text-align: center;
     letter-spacing: 2px;
     color: #000000;
-    padding: 0 25%;
+    padding: 5% 15%;
     text-align: center;
     border-bottom: 1px solid #FF6B00;
     padding-bottom: 50px;
@@ -167,14 +168,7 @@
 
 /* box-4 */
 #landing-page .box-4 .grid-wrapper{
-    grid-gap: 0;
     width: 90vw;
-}
-
-#landing-page .box-4 .sparkle-girls img{
-    width: auto;
-    height: 700px;
-    max-width: 100%;
 }
 
 #landing-page .box-4 .content{
@@ -223,8 +217,6 @@
     color: #FF6B00;
     font-weight: bold;
     text-align: left;
-    top: 50px;
-    left: 50px;
 }
 
 #landing-page .box-5 .content .brandings .row.grid-wrapper{
