@@ -31,7 +31,9 @@
 	  	}
 	}
 	@include col-x-list;
-
+	#brandsearch-page .brand-list .row.grid-wrapper{
+		width: 90% !important;
+	}
 }
 @media screen and (max-width: 880px) {
 	#landing-page .box-3 .pricing{
@@ -155,6 +157,29 @@
 
 	#landing-page .box-7 .content .address{
 		text-align: center !important
+	}
+
+	#brandsearch-page .brand-list .row.grid-wrapper{
+		width: 90% !important;
+	}
+
+	#brandsearch-page .box-1 .col-6{
+		text-align: center !important;
+		grid-column: span 6;
+	}
+	#brandsearch-page .box-1 .col-6 a{
+		float: unset  !important
+	}
+	
+	#brandsearch-page .brand-group .grid-wrapper h1{
+		text-align: left !important;
+	}
+	#brandsearch-page .brand-list .grid-wrapper.no-result{
+		padding: 5em !important;
+	}
+	
+	#footer .grid-wrapper h3{
+		font-size: 24px;
 	}
 }
 
@@ -497,6 +522,25 @@
 	#landing-page .box-8 .content a{
 		padding: 0em 1em  !important;
 	}
+	#brandsearch-page .box-1 .col-6 a{
+		padding: 0 1em !important;
+	}
+
+	#brandsearch-page .brand-group .grid-wrapper h1{
+		text-align: left !important;
+		margin: 0 !important;
+	}
+	
+	#brandsearch-page .brand-list .grid-wrapper{
+		margin-bottom: 2em !important;
+	}
+	#brandsearch-page .brand-list .grid-wrapper.no-result{
+		padding: 3em !important;
+	}
+	
+	#footer .grid-wrapper h3{
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 370px) {
@@ -539,6 +583,25 @@
 	#landing-page .box-5 .content .brandings .view-more a{
 		font-size: 14px !important;
 	}
+	
+	#brandsearch-page .box-1 .col-6 a{
+		padding: 0 1em !important;
+	}
+
+	#brandsearch-page .brand-group .grid-wrapper h1{
+		text-align: left !important;
+		margin: 0 !important;
+	}
+	#brandsearch-page .brand-list .grid-wrapper{
+		margin-bottom: 2em !important;
+	}
+	#brandsearch-page .brand-list .grid-wrapper.no-result{
+		padding: 3em !important;
+	}
+	
+	#footer .grid-wrapper h3{
+		font-size: 14px;
+	}
 }
 
 
@@ -567,4 +630,22 @@
 	#landing-page .box-5 .content .brandings .view-more a{
 		font-size: 12px !important;
 	}
+	#brandsearch-page .box-1 .col-6 a{
+		padding: 0 1em !important;
+	}
+	#brandsearch-page .brand-group .grid-wrapper h1{
+		text-align: left !important;
+		margin: 0 !important;
+	}
+	#brandsearch-page .brand-list .grid-wrapper{
+		margin-bottom: 2em !important;
+	}
+
+	#brandsearch-page .brand-list .grid-wrapper.no-result{
+		padding: 3em !important;
+	}
+	#footer .grid-wrapper h3{
+		font-size: 12px;
+	}
+
 }

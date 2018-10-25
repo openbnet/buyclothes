@@ -26,6 +26,8 @@ const BrandListGroup = (props) => {
                     {getItems}
                 </div>
             </div>
+    }else{
+        items = null;
     }
 
     return (

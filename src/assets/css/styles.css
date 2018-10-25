@@ -420,12 +420,15 @@
     margin-bottom: 5em !important;
 }
 
-#brandsearch-page .brand-list .grid-wrapper{
-    width: 90vw !important;
+#brandsearch-page .brand-list .row.grid-wrapper{
+    width: 80em;
     grid-gap: 0 2em !important;
-}
-#brandsearch-page .brand-group{
     margin-bottom: 5em;
+}
+
+#brandsearch-page .brand-list .row.grid-wrapper .brand-group .grid-wrapper{
+    width: 100% !important;
+    margin-bottom: 2em;
 }
 #brandsearch-page .brand-group .grid-wrapper h1{
     text-align: right;
@@ -436,7 +439,6 @@
     font-weight: 900;
     line-height: normal;
 }
-
 #brandsearch-page .brand-group .grid-wrapper .brands-list .name{
     font-family: Montserrat;
     font-style: normal;
