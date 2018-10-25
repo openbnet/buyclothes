@@ -2,7 +2,6 @@ import React from "react";
 import "../assets/scss/main.scss";
 
 import Header from "./Header";
-import Footer from "./Footer";
 import MailChimpForm from "./mailChimpForm";
 
 class Template extends React.Component {
@@ -32,8 +31,6 @@ class Template extends React.Component {
             <div className={`body ${this.state.loading}`}>
                 {/* <Header /> */}
                 {children}
-                {/* <MailChimpForm />
-                <Footer /> */}
             </div>
         );
     }

@@ -396,8 +396,6 @@
     color: white !important;
 }
 
-
-
 /* brand-search-page*/
 #brandsearch-page .box-1 .contact-us-btn{
     background: #FF6B00 !important;
@@ -413,8 +411,46 @@
     color:black !important;
 }
 
-
 #brandsearch-page .form-control {
     font-size: 2rem;
     padding: 25px 15px;
+}
+
+#brandsearch-page #search-bar{
+    margin-bottom: 5em !important;
+}
+
+#brandsearch-page .brand-list .grid-wrapper{
+    width: 90vw !important;
+    grid-gap: 0 2em !important;
+}
+#brandsearch-page .brand-group{
+    margin-bottom: 5em;
+}
+#brandsearch-page .brand-group .grid-wrapper h1{
+    text-align: right;
+    color: #000000 !important;
+    line-height: 1em !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+#brandsearch-page .brand-group .grid-wrapper .brands-list .name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: .5em;
+}
+#brandsearch-page .brand-list .grid-wrapper.no-result{
+    text-align: center;
+    padding: 10em !important;
+}
+
+#brandsearch-page .brand-group .grid-wrapper .brands-list .main h2{
+    text-align: center;
 }

@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
         return (
             <section id="footer">
-                <ul className="icons">
+                {/* <ul className="icons">
                     <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
                     <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
                     <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
@@ -13,7 +13,12 @@ class Footer extends React.Component {
                 </ul>
                 <ul className="copyright">
                     <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
+                </ul> */}
+                <div className="grid-wrapper">
+                    <div className="col-12">
+                        <h3>Did not see brands on the list?<span><a href="#"> Let us know!</a></span></h3>
+                    </div>
+                </div>
             </section>
         )
     }
