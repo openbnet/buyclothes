@@ -2,7 +2,7 @@ import React from "react";
 import Mailchimp from 'react-mailchimp-form'
 import SimpleSchema from "simpl-schema";
 
-const mailChimpAction = "https://madthread.us17.list-manage.com/subscribe/post?u=936000290ca667d12dd8f65c0&amp;id=1c653d046b"
+const mailChimpAction = "https://madthread.us17.list-manage.com/subscribe/post?u=936000290ca667d12dd8f65c0&amp;id=1337436acd"
 
 const EmailFormSchema = new SimpleSchema({
     email: {

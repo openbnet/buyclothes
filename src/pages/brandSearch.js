@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import '../assets/css/styles.css';
 import FilterSearch from '../components/filterSearch';
 import BrandList from '../components/brandList';
@@ -39,7 +39,7 @@ class BrandSearch extends Component {
                             </p>
                         </div>
                         <div className="col-6">
-                            <a href="#" onClick={() => console.log("Clicked")} className="contact-us-btn button">Contact Us!</a>
+                            <Link to="index.html#contact-us" className="contact-us-btn button">Contact Us!</Link>
                         </div>
                     </div>
                 </section>
