@@ -89,7 +89,7 @@
     margin: 20px;
 }
 
-#landing-page .box-2 .service .text{
+#landing-page .box-2 .service .title-text{
     color: #FFFFFF;
     font-weight: bold;
     font-family: Helvetica;
@@ -100,19 +100,31 @@
     letter-spacing: 2px;
 }
 
-#landing-page .box-2 .service ul{
-    color: #FFFFFF;
-    font-family: Helvetica;
-    font-style: Medium;
-    font-size: 26px;
-    line-height: 39px;
-    text-align: left;
-    letter-spacing: 1px;
-    margin: 30px 0;
+#landing-page .box-2 .service .list{
+    display: block;
+    margin: 1em 0px;
+}
+
+#landing-page .box-2 .service .camera-list, #landing-page .box-2 .service .x-list{
+    margin-bottom: .5em;
+}
+
+#landing-page .box-2 .service .camera-list .icon, #landing-page .box-2 .service .x-list .icon, #landing-page .box-2 .service .check-list .icon{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#landing-page .box-2 .service .camera-list .text, #landing-page .box-2 .service .x-list .text , #landing-page .box-2 .service .check-list .text{
+    display: inline-block;
 }
 
 #landing-page .box-2 .col-6{
     padding: 15px;
+} 
+
+#landing-page .box-2 .purple-dress {
+    align-items: center;
+    display: flex;
 }
 
 #landing-page .box-2 .purple-dress img{
@@ -135,6 +147,7 @@
     margin-bottom: 0;
 }
 #landing-page .box-3 .pricing{
+    font-family:   Helvetica Neue;
     grid-gap: 0;
     line-height: normal;
     letter-spacing: 2px;
@@ -456,3 +469,6 @@
 #brandsearch-page .brand-group .grid-wrapper .brands-list .main h2{
     text-align: center;
 }
+
+
+
