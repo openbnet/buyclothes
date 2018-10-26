@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Swiper from 'react-id-swiper';
-
+import { Link } from 'gatsby'
 import Layout from '../components/layout';
 import MailChimpForm from '../components/mailChimpForm';
 
@@ -144,7 +144,7 @@ class Homepage extends React.Component {
                             </div>
                             <div className="row">
                                 <div className="view-more">
-                                    <a href="/brandSearch">View more Brands ></a>
+                                    <Link  to="/brandSearch">View more Brands ></Link>
                                 </div>
                             </div>
                         </div>
