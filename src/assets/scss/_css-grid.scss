@@ -303,6 +303,7 @@
 
 	#landing-page .box-5 {
 		background-position: top !important;
+		background-size: cover !important;
 	}
 
 	#landing-page .box-5 .content{
@@ -319,6 +320,10 @@
 
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-self: right;
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
@@ -326,7 +331,7 @@
 	#landing-page .box-5 .content .brandings .row .col-3{
 		display: inline-block;
 		height: 34px;
-		width: 111px;
+		width: 82px;
 		margin: 0.5em !important;
 	}
 	#landing-page .box-5 .content .brandings .view-more a{
@@ -450,6 +455,7 @@
 	}
 
 	#landing-page .box-5 {
+		background-size: cover !important;
      background-position: top !important;
 	}
 
@@ -467,6 +473,10 @@
 	
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-self: right;
 	}
 	#landing-page .box-5 .content .brandings .row{
 		// display: none;
@@ -483,7 +493,7 @@
 		margin: .5em !important;
 	}
 	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 16px !important;
+		font-size: 10px !important;
 	}
 	
 	#landing-page .box-6 h2{
