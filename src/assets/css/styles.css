@@ -363,14 +363,20 @@
     color: #FF6B00;
     text-align: center;
 }
+#landing-page .box-6 .content .clothes-picture image.fit{
+    justify-content: center;
+    display: flex; 
+}
 #landing-page .box-6 .content .clothes-picture img{
-    width: 486px;
-    height: 692px;
+    width: 376px;
+    height: 574px;
 }
 
 
+
+
 #landing-page .box-6 .content .clothes-details{
-    margin: 10px 0;
+    margin: 15px;
 }
 
 #landing-page .box-6 .content .clothes-details .title{
@@ -401,14 +407,7 @@
     font-size: 13px;
     letter-spacing: 2px;
     color: #000000;
-}
-
-
-#landing-page .box-6 .content .clothes-picture img{
-    width: 486px;
-    height: 692px;
-}
-
+} 
 
 
 #landing-page .box-6 hr{
