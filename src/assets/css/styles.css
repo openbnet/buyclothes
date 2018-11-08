@@ -4,27 +4,38 @@
     padding: 1em 0;
 }
 
-/* nav */
-
-#nav {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 70em;
-    padding: 1em 0;
-    cursor: default;
-}
-#nav .brand {
-    text-align: left;
-    text-transform: none;
-}
-#nav .brand-col{
-    align-self: center
-}
-#nav .contact-us-button{
-    float:	right;
-    padding: 0.55em 1.75em 0.55em 1.75em
+/* header */
+#custom-header .header-container{ 
+    font-family: Helvetica;
+    line-height: normal;
+    font-size: 20px;
+	background-color: #fff;
+	width: calc(100vw - 60px); 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 30px;
 }
 
+#custom-header .header-container .nav-items {
+	width: 40%;
+	font-weight: 400;
+}
+
+#custom-header .header-container .nav-items .nav-item {
+	margin-right: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#custom-header .header-container .button-wrapper .contact-us-button{ 
+    width: 228px;
+    height: 57px;
+    background: #FF6B00;
+}
 
 /* landing-page */
 #landing-page{
@@ -41,8 +52,11 @@
     color: #000000;
 }
 #landing-page .box-1 .content{
-    text-align: center;
-    margin: 10em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 #landing-page .box-1 .content p{
     font-family: Helvetica;
@@ -55,10 +69,17 @@
     margin-bottom: 40px;
 }
 
-#landing-page .box-1 .content a{
-    border-radius: 24px;
-    background: #FF6B00;
-    color: white !important;
+#landing-page .box-1 .details .button-wrapper {
+    width: 242px;
+    height: 44px;
+    border-radius: 15px;
+}
+
+#landing-page .box-1 .details .button-wrapper .interested-btn{ 
+    line-height: 40px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 #landing-page .box-1 .details{
@@ -366,16 +387,23 @@
     color: #FF6B00;
 }
 
-#landing-page .box-7 .content .submit-button{
-    text-align: center;
-    margin: 15px;
-}
+#landing-page .box-7 .content .contact-details form{
+    text-align: center
+} 
 
-#landing-page .box-7 .content .submit-button a{
-    border-radius: 10px;
-    padding: 0.35em 1.75em 0.35em 1.75em;
-    color: #FF6B00;
-}
+#landing-page .box-7 .content .contact-details form button{
+    width: 235px;
+    height: 59px;
+    background: #FF6B00;
+    border-radius: 15px;
+    font-family: Helvetica;
+    line-height: 40px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+} 
 
 #landing-page .box-7 .content .address{
     padding: 0 70px;
@@ -396,20 +424,22 @@
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-#landing-page .box-8 .content div{
-    position: relative;
-    top: 35%;
-    padding: 0 30%;
-    text-align: center;
-}
 
-#landing-page .box-8 .content a{
-    background: #FF6B00 !important;
-    border-radius: 10px;
-    color: white !important;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#landing-page .box-8 .content .button-wrapper{
+    border-radius: 15px; 
+}
+#landing-page .box-8 .content .button-wrapper .button{
+    width: 235px;
+    height: 59px;
 }
 
 /* brand-search-page*/

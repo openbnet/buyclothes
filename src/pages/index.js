@@ -39,22 +39,21 @@ class Homepage extends React.Component {
                 <div id="landing-page">
                     <div className="main style1 box-1">
                         <div className="grid-wrapper">
-                            <div className="col-6 details">
-                                <p className="hashtag">                                   
-                                    #SGFashionForGood
-                                </p>
+                            <div className="col-6 details"> 
                                 <div className="content">
                                     <p>Trade in your used designer clothing and get instant cash</p>
-                                    <a href="#contact-us" className="contact-us-button button icon">I'm Interested!</a>
+                                    
+                                    <div className="button-wrapper">
+                                        <a className="interested-btn button nav-contact-us">I'm Interested!</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-6 flower-dress">
-                                {/* <img src={require('../images/1.jpg')}/> */}
+                            <div className="col-6 flower-dress"> 
                                 <span className="image fit"><img src={pic01} alt="" /></span>
                             </div>
                         </div>
                     </div>
-                    <div className="container box-2">
+                    <div className="container box-2" id="about">
                         <div className="grid-wrapper">
                             <div className="col-6 purple-dress">
                                 <span className="image fit"><img src={pic02} alt="" /></span>
@@ -135,7 +134,7 @@ class Homepage extends React.Component {
                     </div>
                     <div>
                 </div>
-                <div className="container box-3">
+                <div className="container box-3" id="price">
                     <h2>Here’s our pricing guide*:</h2>
                     <div className="grid-wrapper  pricing">
                         <div className="col-6 left">
@@ -153,7 +152,7 @@ class Homepage extends React.Component {
                         *Prices stated are generally for items at least SGD$300-$500 in retail value. For premium items >$500 in retail value, prices are negotiable.
                     </div>
                 </div>
-                <div className="container box-4">
+                <div className="container box-4" id="how">
                     <div className="grid-wrapper">
                         <div className="col-6 sparkle-girls">
                             <span className="image fit"><img src={pic03} alt="" /></span>
@@ -183,7 +182,7 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="container box-5">
+                <div className="container box-5" id="brands">
                     <div className="row grid-wrapper content">  
                         <h2>Brands we buy.</h2>
                         <div className="brandings">
@@ -305,9 +304,9 @@ class Homepage extends React.Component {
                     <div className="content">
                         <div className="title">
                             Ready to start the year fresh?
-                        </div>
-                        <div>
-                            <a href="#contact-us" onClick={() => console.log("button clicked")} className="yes-button button">I'm Interested!</a>
+                        </div>                         
+                        <div className="button-wrapper">
+                            <a className="interested-btn button nav-contact-us">YES!</a>
                         </div>
                     </div>
                 </div>
