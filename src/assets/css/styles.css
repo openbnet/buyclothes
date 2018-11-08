@@ -383,6 +383,7 @@
 }
 
 #landing-page .box-6 .content .clothes-details .info{
+    font-family: Montserrat; 
     font-style: normal;
     line-height: normal;
     font-size: 16px;
@@ -393,6 +394,7 @@
 }
 
 #landing-page .box-6 .content .clothes-details .price{
+    font-family: Montserrat; 
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -400,30 +402,63 @@
     letter-spacing: 2px;
     color: #000000;
 }
+
+
+#landing-page .box-6 .content .clothes-picture img{
+    width: 486px;
+    height: 692px;
+}
+
+
+
 #landing-page .box-6 hr{
     height: 1px;
     border: 0;
     margin: 2em 25%;
     padding: 1px;
     background-color: #FF6B00;
+} 
+
+
+#landing-page .box-6 .content.show-mobile .clothes-container , #landing-page .box-6 .content.show-mobile .clothes-container .clothes-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+#landing-page .box-6 .content.show-mobile .clothes-container .clothes-picture .image.fit{
+    margin: unset;
 }
+#landing-page .box-6 .content.show-mobile .clothes-container .clothes-details{
+    text-align: center;
+}
+#landing-page .box-6 .content.show-mobile .clothes-container .clothes-details .title{
+    font-weight: bold; 
+    font-size: 15px;  
+}
+#landing-page .box-6 .content.show-mobile .clothes-container .clothes-details .info{
+    font-weight: 500; 
+    font-size: 12px;  
+}
+#landing-page .box-6 .content.show-mobile .clothes-container .clothes-details .price{  
+    font-size: 12px;
+    text-align: center; 
+}
+#landing-page .box-6 .content .contact-details form{
+    text-align: center
+} 
 
-/* box-7 */
-/* #contact-us { clear:both; } */
-
-
-#landing-page .box-7 .content .title {
-    padding: 3% 25%;
+#landing-page .box-7 .content .title{
     line-height: normal;
     font-size: 24px;
     text-align: center;
-    letter-spacing: 2px;
-    color: #FF6B00;
+    letter-spacing: 2px; 
+    color: #FF6B00; 
+    padding: 0 20rem;
 }
 
-#landing-page .box-7 .content .contact-details form{
-    text-align: center
-} 
+
 
 #landing-page .box-7 .content .contact-details form button{
     width: 235px;
@@ -453,7 +488,6 @@
 }
 
 /* box-8 */
-
 #landing-page .box-8 .content{
     background-image: url(../images//5.jpg);
     width: 100%;
@@ -468,6 +502,12 @@
     align-items: center;
     flex-direction: column;
 } 
+
+#landing-page .box-8 .title{	
+    color: #FFFFFF;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
 
 #landing-page .box-8 .content .button-wrapper{
     border-radius: 15px; 

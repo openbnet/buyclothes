@@ -141,7 +141,7 @@ class Homepage extends React.Component {
                             Get up to 120 SGD/piece
                         </div>
                     </div>
-                    <div class="pricing show-mobile-flex">
+                    <div className="pricing show-mobile-flex">
                         <div className="trade-in">
                             <p className="trade-title title">Trade In</p>
                             <p className="trade-items items">1-10 items</p>
@@ -218,7 +218,7 @@ class Homepage extends React.Component {
                 <div className="container box-6">
                     <h2>Clothes we've bought</h2>
 
-                    <div className="content">
+                    <div className="content show-desktop">
                         <Swiper {...params}>
                             <div className="clothes-container">
                                 <div className="clothes-picture">
@@ -265,6 +265,52 @@ class Homepage extends React.Component {
                                 </div>
                             </div>
                         </Swiper>
+                    </div>
+                    <div className="content show-mobile"> 
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe1} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">TALITHA</div>
+                                    <div className="info">Ashanti Geometric Print Silk Georgette Burgundy Dress</div>
+                                    <div className="price">Retail SGD $1,365</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">GUCCI</div>
+                                    <div className="info">Ecru Embellished Knit Beige Dress</div>
+                                    <div className="price">Retail SGD $3,675</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe3} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">REFORMATION</div>
+                                    <div className="info">Butterfly Midi Black Dress</div>
+                                    <div className="price">Retail SGD $593</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe4} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">RIXO LONDON</div>
+                                    <div className="info">Martha Silk Midi  Floral Printed Dress</div>
+                                    <div className="price">Retail SGD $738</div>
+                                </div>
+                            </div> 
                     </div>
                     
                     <div className="hr"   id="contact-us">

@@ -943,6 +943,10 @@
 			#header {
 				@include padding(6em, 0, (0,0,_size(element-margin),0));
 			}
+			
+		#landing-page .box-8{
+			height: 100vh;
+		}
 
 	}
 
@@ -950,122 +954,49 @@
 
 	@include breakpoint(large) {
 
-		/* Basic */
+		
+		#landing-page .box-7 .content .title{  
+			padding: 0 10rem !important;
+		}
 
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
-
-			h1, h2, h3, h4, h5, h6 {
-				br {
-					display: none;
-				}
-			}
-
-		/* List */
-
-			ul {
-				&.major-icons {
-					li {
-						padding: 2em;
-
-						.icon {
-							height: 8em;
-							line-height: 8em;
-							width: 8em;
-						}
-					}
-				}
-			}
-
-		/* Main */
-
-			.main {
-				@include padding(4em, 0);
-
-				&.style2 {
-					background-attachment: scroll;
-				}
-			}
-
-		/* Header */
-
-			#header {
-				@include padding(5em, 0, (0,0,_size(element-margin),0));
-				background-attachment: scroll;
-
-				br {
-					display: inline;
-				}
-			}
-
-		/* Footer */
-
-			#footer {
-				@include padding(4em, 0, (0,0,_size(element-margin),0));
-				background-attachment: scroll;
-			}
-
+		#landing-page .box-8{
+			height: 70vh;
+		}
 	}
 
 /* Medium */
 
 	@include breakpoint(medium) {
 
+
+		#landing-page .box-1 .flower-dress { 
+			margin-top: 50px;
+		}
 		#landing-page .box-1 .content{
 			margin: 0 !important;
+		} 
+		
+		#landing-page .box-7 .content .title{  
+			padding: 0 5rem !important;
 		}
-		/* List */
-
-			ul {
-				&.major-icons {
-					li {
-						padding: 2em;
-
-						.icon {
-							height: 7em;
-							line-height: 7em;
-							width: 7em;
-						}
-					}
-				}
-			}
-
-		/* Main */
-
-			.main {
-				@include padding(5em, 3em);
-			}
-
-		/* Header */
-
-			#header {
-				@include padding(8em, 3em, (0,0,_size(element-margin),0));
-			}
-
-		/* Footer */
-
-			#footer {
-				@include padding(5em, 3em, (0,0,_size(element-margin),0));
-			}
-
-		/* One */
-
-			#one {
-				text-align: center;
-			}
-
-		/* Two */
-
-			#two {
-				text-align: center;
-			}
+		
+		#landing-page .box-7 .content .contact-details{
+			text-emphasis: center;
+		}
+		#landing-page .box-8{
+			height: 50vh;
+		}
 
 	}
 
 /* Small */
 
 	@include breakpoint(small) {
+		
+
+		#landing-page .box-1 .flower-dress { 
+			margin-top: 25px;
+		}
 		// landing page
 		#landing-page .box-1 .content{
 			margin: 0 !important;
@@ -1105,6 +1036,16 @@
 			margin: 0 0 2em 0;
 			padding-left: 1.25em;
 		}
+		#landing-page .box-7 .content .title{ 
+			font-size: 18px !important; 
+		}
+		
+		#landing-page .box-7 .content .title{  
+			padding: 0 3rem !important;
+		}
+		.hr hr{
+			margin: unset !important;
+		}
 	}
 
 /* XSmall */
@@ -1120,10 +1061,6 @@
 		
 		#custom-header .header-container.show-mobile-flex .header-title p{ 
 			font-size: 12px;  
-		}
-
-		#landing-page .box-1 .flower-dress { 
-			margin-top: 50px;
 		}
 
 		#landing-page .box-2 .service .title-text{ 
