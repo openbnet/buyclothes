@@ -36,7 +36,23 @@
     height: 57px;
     background: #FF6B00;
 }
+#custom-header .header-container.show-mobile-flex{  
+	width: 100vw
+}
 
+
+#custom-header .header-container.show-mobile-flex .header-title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#custom-header .header-container.show-mobile-flex .header-title p{
+    margin: unset;
+    font-family: Helvetica;
+    line-height: 13px;
+    color: #FF6B00;
+    letter-spacing: 2px;
+}
 /* landing-page */
 #landing-page{
     background: white;
@@ -138,7 +154,6 @@
 #landing-page .box-2 .service .camera-list .text, #landing-page .box-2 .service .x-list .text , #landing-page .box-2 .service .check-list .text{
     display: inline-block;
 }
-
 #landing-page .box-2 .col-6{
     padding: 15px;
 } 
@@ -164,29 +179,48 @@
 }
 
 #landing-page .box-3 h2{
-    color: #FF6B00;
-    margin-bottom: 0;
+    color: #FF6B00; 
 }
 #landing-page .box-3 .pricing{
-    font-family:   Helvetica Neue;
+    font-family: Helvetica;
     grid-gap: 0;
     line-height: normal;
     letter-spacing: 2px;
     color: #000000;
     width: 100%;
 }
+#landing-page .box-3 .pricing{ 
+    display: flex;
+    justify-content: space-evenly;
+} 
 
-#landing-page .box-3 .pricing .right{
-    text-align: left;
-    padding-left: 10px;
+#landing-page .box-3 .pricing.show-mobile-flex .trade-in,#landing-page .box-3 .pricing.show-mobile-flex .get-up{ 
+    width: 50%;
 }
 
-#landing-page .box-3 .pricing .left{
-    margin-left: -50px;
-    text-align: right;
-    border-right:  1px solid black;
-    padding-right: 10px;
+#landing-page .box-3 .pricing.show-mobile-flex .trade-title, #landing-page .box-3 .pricing.show-mobile-flex .get-up-title{ 
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #000000; 
+    margin-bottom: 1em;
+    line-height: 30px;
+    border-bottom: 1px solid; 
+    margin: 0 2rem 2em;
 }
+
+
+#landing-page .box-3 .pricing.show-mobile-flex .items{ 
+    line-height: normal;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin: unset;
+}
+
+#landing-page .box-3 .pricing.show-mobile-flex .trade-items{ 
+    border-right: 1px solid;
+}
+
 
 #landing-page .box-3 .note-1 {
     line-height: normal;
@@ -403,6 +437,7 @@
     text-transform: uppercase;
     color: white;
     margin-top: 30px;
+    cursor: pointer;
 } 
 
 #landing-page .box-7 .content .address{

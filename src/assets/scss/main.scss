@@ -19,7 +19,7 @@
 	xlarge: '(max-width: 1680px)',
 	large: '(max-width: 1280px)',
 	medium: '(max-width: 980px)',
-	small: '(max-width: 736px)',
+	small: '(max-width: 780px)',
 	xsmall: '(max-width: 480px)',
 	xxsmall: '(max-width: 360px)'
 ));
@@ -55,6 +55,7 @@
 		justify-content: center;
 		align-items: center;
 		background: #FF6B00;
+		cursor: pointer;
 	}
 	.button-wrapper .button {
 		display: flex;
@@ -62,6 +63,42 @@
 		align-items: center;
 		color: #fff;
 		text-decoration: none; 
+	}
+
+	.show-mobile, .show-mobile-flex  {
+		display: none!important
+	}
+
+	.side-menu {
+		position: fixed;
+		transition: all .2s ease
+	}
+	.side-menu {
+		z-index: 999;
+		background-color: rgba(0, 0, 0, .6);
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: -100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column
+	}
+
+	.side-menu .close-side {
+		position: absolute;
+		top: 55px;
+		left: 30px;
+		width: 25px
+	}
+	
+	.side-menu .nav-item {
+		font-size: 1.6em;
+		color: #FFF;
+		margin-bottom: 10px;
+		font-weight: 600;
+		text-decoration: none;
 	}
 
 	strong, b {
@@ -1033,161 +1070,79 @@
 		#landing-page .box-1 .content{
 			margin: 0 !important;
 		}
+		#header{
+			display: none;
+		}
+		
+		.show-mobile {
+			display: block!important
+		}
+		.show-mobile-flex {
+			display: flex!important
+		}
+		.show-desktop {
+			display: none!important
+		}
+			
+		#custom-header .header-container.show-mobile-flex .header-title p{ 
+			font-size: 1.2em;  
+		} 
 
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-			h1 {
-				font-size: 1.75em;
-			}
-
-			h2 {
-				font-size: 1.5em;
-			}
-
-			h3 {
-				font-size: 1.1em;
-			}
-
-			h4 {
-				font-size: 1em;
-			}
-
-		/* List */
-
-			ul {
-				&.major-icons {
-					li {
-						padding: 1.5em;
-
-						.icon {
-							height: 5em;
-							line-height: 5em;
-							width: 5em;
-
-							&:before {
-								font-size: 42px;
-							}
-						}
-					}
-				}
-			}
-
-		/* Icon */
-
-			.icon {
-				&.major {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-				}
-			}
-
-		/* Button */
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			button,
-			.button {
-				height: 3em;
-				line-height: 3em;
-			}
-
-		/* Main */
-
-			.main {
-				@include padding(3em, 1.5em);
-			}
-
-		/* Header */
-
-			#header {
-				@include padding(4em, 3em, (0,0,_size(element-margin),0));
-
-				.actions {
-					margin: _size(element-margin) 0 0 0;
-				}
-			}
-
-		/* Footer */
-
-			#footer {
-				@include padding(3em, 1.5em, (0,0,_size(element-margin),0));
-			}
-
+		#landing-page .box-3 h2{
+			font-size: 20px;
+			letter-spacing: 2px; 
+		}
+		#landing-page .box-4 .content h2{
+			font-size: 20px; 
+			letter-spacing: 2px; 
+		}
+		#landing-page .box-4 .content ol > li{
+			font-size: 16px !important;
+			letter-spacing: 2px !important; 
+		}
+		#landing-page .box-4 .content .note-2{
+			font-size: 14px !important;  
+			margin: 0 0 2em 0;
+			padding-left: 1.25em;
+		}
 	}
 
 /* XSmall */
 
 	@include breakpoint(xsmall) {
+		.main{
+			padding: unset;
+		}
+		.main .details .content{ 
+			padding: 0 3em;
+		}
 
-		/* List */
+		
+		#custom-header .header-container.show-mobile-flex .header-title p{ 
+			font-size: 12px;  
+		}
 
-			ul {
-				&.actions {
-					margin: 0 0 _size(element-margin) 0;
+		#landing-page .box-1 .flower-dress { 
+			margin-top: 50px;
+		}
 
-					li {
-						display: block;
-						padding: (_size(element-margin) * 0.5) 0 0 0;
-						text-align: center;
-						width: 100%;
+		#landing-page .box-2 .service .title-text{ 
+			font-size: 22px !important; 
+			letter-spacing: 2px !important;
+			text-align: center !important;
+		}
 
-						&:first-child {
-							padding-top: 0;
-						}
+		#landing-page .box-2 .service .hr{ 
+			justify-content: center;
+		}
+		#landing-page .box-2 .service hr{ 
+			border-bottom: solid 1px white;
+			width: 80%;
+		}
 
-						> * {
-							margin: 0 !important;
-							width: 100%;
-
-							&.icon {
-								&:before {
-									margin-left: -2em;
-								}
-							}
-						}
-					}
-
-					&.small {
-						li {
-							padding: (_size(element-margin) * 0.25) 0 0 0;
-
-							&:first-child {
-								padding-top: 0;
-							}
-						}
-					}
-				}
-			}
-
-		/* Button */
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			.button {
-				padding: 0;
-			}
-
-		/* Main */
-
-			.main {
-				@include padding(2em, 1.5em);
-			}
-
-		/* Header */
-
-			#header {
-				@include padding(4em, 2em, (0,0,_size(element-margin),0));
-
-				br {
-					display: none;
-				}
-			}
-
+		#landing-page .box-2 .service .camera-list, #landing-page .box-2 .service .x-list{
+			margin-bottom: 2em !important;
+		}
 		/* Footer */
 
 			#footer {

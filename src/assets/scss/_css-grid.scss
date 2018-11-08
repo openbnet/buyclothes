@@ -34,18 +34,8 @@
 	#brandsearch-page .brand-list .row.grid-wrapper{
 		width: 90% !important;
 	}
-}
-@media screen and (max-width: 880px) {
-	#landing-page .box-3 .pricing{
-		font-size: 25px !important;
-		display: inline !important;
-	}
-	
-	#landing-page .box-3 .note-1{
-		padding: 15% 20% 5%  !important
-	}
+} 
 
-}
 @media screen and (max-width: 980px) {
 
 	.grid-wrapper {
@@ -57,30 +47,9 @@
 	
 	#landing-page .box-1 .details .content p{
 		margin-bottom: .5em;
-	}
-
-	#landing-page .box-1 .details .content a{
-		margin-bottom: 1.5em;
-	}
-	
-
-	#landing-page .box-3 .pricing{
-		// font-size: 32px !important;
-		display: inline !important;
-	}
-
-	#landing-page .box-3 .pricing .left{
-		float: left;
-		width: 50%;
-		margin-left: 0 !important;
-	}
-
-	#landing-page .box-3 .pricing .right{
-		float: right;
-		width: 50%;
-		padding-left: 8px !important;
-	}
-
+	} 
+ 
+ 
 	#landing-page .box-4 .content{
 		margin: 0 !important;
 	}
@@ -92,12 +61,7 @@
 
 	#landing-page .box-4 .content h2{
     	text-align: center !important;
-	}
-
-	#landing-page .box-4 .content .note-2{
-		text-align: center !important;
-	}
-
+	} 
 
 	#landing-page .box-5 .content{
 		padding: 1em 0 !important;
@@ -122,10 +86,7 @@
 		height: 40px;
 		width: 170px;	
 		margin: 0.5em !important;
-	}
-	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 24px !important;
-	}
+	} 
 	
 	#landing-page .box-6{
 		margin-top: 1em;
@@ -190,12 +151,8 @@
 		width: 60em;
 	}
 	#landing-page .box-3 .note-1{
-		font-size: 16px !important;
-		padding: 2% 13% !important;
-	}
-	#landing-page .box-3 .pricing{
-		font-size: 38px !important;
-	}
+		font-size: 16px !important; 
+	} 
 	#landing-page .box-5{
 		height: 896px;
 		margin-bottom: 3em;
@@ -244,62 +201,28 @@
 		margin-bottom: 1em;
 	}
 	#landing-page .box-1 .details .content p{
-		margin-bottom: .5em;
-		font-size: 24px;
-	}
-	#landing-page .box-1 .details .content a{
-		margin-bottom: 1.5em;
-	}
-
-	#landing-page .box-2 .service .title-text{
-		text-align: center !important;
-		font-size: 23px !important;
-	
-	}
+		line-height: 22px;
+		font-size: 20px;
+	}  
 
 	#landing-page .box-2 .service ul{
 		font-size: 18px !important;
 		line-height: 24px !important;
 		letter-spacing: 0 !important;
-	}
-
-	#landing-page .box-3 .pricing{
-		font-size: 17px !important;
-		display: inline !important;
-	}
-
-	#landing-page .box-3 .pricing .left{
-		float: left;
-		width: 50%;
-		margin-left: 0 !important;
-	}
-
-	#landing-page .box-3 .pricing .right{
-		float: right;
-		width: 50%;
-		padding-left: 8px !important;
-	}
+	}   
 
 	#landing-page .box-3 h2{
 		font-size: 2em;
 	}
 
-	#landing-page .box-3 .note-1{
-		padding: 15% 20% 5%  !important;
+	#landing-page .box-3 .note-1{ 
 		font-size: 12px !important;
 	}
 
 	#landing-page .box-4 .content{
-		margin: 0 !important
-	}
-
-	#landing-page .box-4 .content ol > li{
-		font-size: 18px !important
-	}
-
-	#landing-page .box-4 .content .note-2{
-		text-align: center !important;
-	}
+		margin: 0 !important;
+		padding: 0 2em;
+	}  
 
 	#landing-page .box-5 {
 		background-position: top !important;
@@ -323,7 +246,7 @@
 		width: 50%;
 		display: flex;
 		flex-direction: column;
-		justify-self: right;
+		justify-self: center;
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
@@ -334,8 +257,12 @@
 		width: 82px;
 		margin: 0.5em !important;
 	}
-	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 20px !important;
+	#landing-page .box-5 .content .brandings .view-more{
+		text-align: center !important;
+	}
+	#landing-page .box-5 .content .brandings .view-more a{ 
+		font-size: 17px !important;
+		letter-spacing: 2px; 
 	}
 	#landing-page .box-6{
 		margin-top: 1em;
@@ -386,46 +313,15 @@
 	}
 
 	#landing-page .box-1 .details .content a{
-		font-size: 14px !important;
-		padding: 0em 1em !important;
-	}
-
-	#landing-page .box-2 .service .title-text{
-		font-size: 22px !important;
-		text-align: center !important;
-		line-height: 30px !important;
-	}
-
+		line-height: 40px;
+		font-size: 12px;
+		letter-spacing: 2px;
+	} 
 	#landing-page .box-2 .service ul{
 		font-size: 18px !important;
 		line-height: 24px !important;
 		letter-spacing: 0 !important;
-	}
-
-	#landing-page .box-3 .note-1{
-		padding: 3em 1em !important;
-	}
-
-	#landing-page .box-3 h2{
-		font-size: 1.5em;
-	}
-
-	#landing-page .box-3 .pricing{
-		font-size: 10px !important;
-		display: inline !important;
-	}
-
-	#landing-page .box-3 .pricing .left{
-		float: left;
-		width: 50%;
-		margin-left: -15px !important;
-	}
-
-	#landing-page .box-3 .pricing .right{
-		float: right;
-		width: 50%;
-		padding-left: 0px !important;
-	}
+	}  
 
 	#landing-page .box-4 .image.fit{
 		margin: 1em 0;
@@ -448,8 +344,7 @@
 		font-size: 14px !important;
 	}
 
-	#landing-page .box-4 .content .note-2 {
-		text-align: center !important;
+	#landing-page .box-4 .content .note-2 { 
 		line-height: 1em;
 		margin-bottom: 1em;
 	}
@@ -476,7 +371,7 @@
 		width: 50%;
 		display: flex;
 		flex-direction: column;
-		justify-self: right;
+		justify-self: center;
 	}
 	#landing-page .box-5 .content .brandings .row{
 		// display: none;
@@ -561,9 +456,7 @@
 		padding: 15px 5px !important
 	}
 
-	#landing-page .box-3 .note-1{
-		margin: 2% 0% -7%;
-		padding: 15% 0 4% 0 !important;
+	#landing-page .box-3 .note-1{ 
 		font-size: 10px !important;
 	}
 

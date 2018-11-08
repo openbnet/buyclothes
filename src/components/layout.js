@@ -28,6 +28,24 @@ class Template extends React.Component {
                 $('html, body').animate({scrollTop: $("#"+id).offset().top - 100 }, 500);
             }
         }, 500); 
+        
+        $(".ham-menu").on("click", function(){
+            $('.side-menu').css("left", "0px");
+            $('body').css("overflow-y", "hidden");
+            $('.ham-menu').css("opacity", "0");
+            $(".banner").each(function() {
+                $(this).css("filter", "blur(2px)");
+            })
+        });
+        $(".close-side").on("click", function(){
+            $('.side-menu').css("left", "-100vw");
+            $('body').css("overflow-y", "scroll");
+            $('.ham-menu').css("opacity", "1");
+            $(".banner").each(function() {
+                $(this).css("filter", "none");
+            })
+        });
+        
         $('.nav-about').on('click', function() {  
             if(window.location.pathname == '/' ||  window.location.pathname.indexOf("index.html") > -1){ 
                 $('html, body').animate({

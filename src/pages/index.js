@@ -55,13 +55,16 @@ class Homepage extends React.Component {
                     </div>
                     <div className="container box-2" id="about">
                         <div className="grid-wrapper">
-                            <div className="col-6 purple-dress">
+                            <div className="col-6 purple-dress show-desktop">
                                 <span className="image fit"><img src={pic02} alt="" /></span>
                             </div>
                             <div className="col-6">
                                 <div className="service">
                                     <div className="title-text">
                                         We provide 24-hour doorstep service all around Singapore.
+                                    </div>
+                                    <div className="hr show-mobile-flex">
+                                        <hr/>
                                     </div>
                                     <div className="list">
                                         <div className="camera-list"> 
@@ -117,17 +120,7 @@ class Homepage extends React.Component {
                                                 On-the-spot<br/> quality checks
                                             </div>
                                         </div>
-                                    </div>
-                                    {/* <ul>
-                                        <li>
-                                        </li>
-                                        <li>
-                                            No transport or<br/> hidden charges
-                                        </li>
-                                        <li>
-                                            On-the-spot<br/> quality checks
-                                        </li>
-                                    </ul> */}
+                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -136,7 +129,7 @@ class Homepage extends React.Component {
                 </div>
                 <div className="container box-3" id="price">
                     <h2>Here’s our pricing guide*:</h2>
-                    <div className="grid-wrapper  pricing">
+                    <div className="grid-wrapper pricing show-desktop">
                         <div className="col-6 left">
                             Trade in >10 items<br/>
                             Trade in >10 items<br/>
@@ -146,6 +139,20 @@ class Homepage extends React.Component {
                             Get up to 70 SGD/piece<br/>
                             Get up to 90 SGD/piece<br/>
                             Get up to 120 SGD/piece
+                        </div>
+                    </div>
+                    <div class="pricing show-mobile-flex">
+                        <div className="trade-in">
+                            <p className="trade-title title">Trade In</p>
+                            <p className="trade-items items">1-10 items</p>
+                            <p className="trade-items items">>10 items</p>
+                            <p className="trade-items items">>20 items</p> 
+                        </div>
+                        <div className="get-up">
+                            <p className="get-up-title title">Get up to</p>
+                            <p className="get-up-items items">70 SGD/piece</p>
+                            <p className="get-up-items items">90 SGD/piece</p>
+                            <p className="get-up-items items">120 SGD/piece</p>  
                         </div>
                     </div>
                     <div className="note-1">
