@@ -39,30 +39,32 @@ class Homepage extends React.Component {
                 <div id="landing-page">
                     <div className="main style1 box-1">
                         <div className="grid-wrapper">
-                            <div className="col-6 details">
-                                <p className="hashtag">                                   
-                                    #SGFashionForGood
-                                </p>
+                            <div className="col-6 details"> 
                                 <div className="content">
                                     <p>Trade in your used designer clothing and get instant cash</p>
-                                    <a href="#contact-us" className="contact-us-button button icon">I'm Interested!</a>
+                                    
+                                    <div className="button-wrapper">
+                                        <a className="interested-btn button nav-contact-us">I'm Interested!</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-6 flower-dress">
-                                {/* <img src={require('../images/1.jpg')}/> */}
+                            <div className="col-6 flower-dress"> 
                                 <span className="image fit"><img src={pic01} alt="" /></span>
                             </div>
                         </div>
                     </div>
-                    <div className="container box-2">
+                    <div className="container box-2" id="about">
                         <div className="grid-wrapper">
-                            <div className="col-6 purple-dress">
+                            <div className="col-6 purple-dress show-desktop">
                                 <span className="image fit"><img src={pic02} alt="" /></span>
                             </div>
                             <div className="col-6">
                                 <div className="service">
                                     <div className="title-text">
                                         We provide 24-hour doorstep service all around Singapore.
+                                    </div>
+                                    <div className="hr show-mobile-flex">
+                                        <hr/>
                                     </div>
                                     <div className="list">
                                         <div className="camera-list"> 
@@ -118,26 +120,16 @@ class Homepage extends React.Component {
                                                 On-the-spot<br/> quality checks
                                             </div>
                                         </div>
-                                    </div>
-                                    {/* <ul>
-                                        <li>
-                                        </li>
-                                        <li>
-                                            No transport or<br/> hidden charges
-                                        </li>
-                                        <li>
-                                            On-the-spot<br/> quality checks
-                                        </li>
-                                    </ul> */}
+                                    </div> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
                 </div>
-                <div className="container box-3">
+                <div className="container box-3" id="price">
                     <h2>Here’s our pricing guide*:</h2>
-                    <div className="grid-wrapper  pricing">
+                    <div className="grid-wrapper pricing show-desktop">
                         <div className="col-6 left">
                             Trade in >10 items<br/>
                             Trade in >10 items<br/>
@@ -149,11 +141,25 @@ class Homepage extends React.Component {
                             Get up to 120 SGD/piece
                         </div>
                     </div>
+                    <div className="pricing show-mobile-flex">
+                        <div className="trade-in">
+                            <p className="trade-title title">Trade In</p>
+                            <p className="trade-items items">1-10 items</p>
+                            <p className="trade-items items">>10 items</p>
+                            <p className="trade-items items">>20 items</p> 
+                        </div>
+                        <div className="get-up">
+                            <p className="get-up-title title">Get up to</p>
+                            <p className="get-up-items items">70 SGD/piece</p>
+                            <p className="get-up-items items">90 SGD/piece</p>
+                            <p className="get-up-items items">120 SGD/piece</p>  
+                        </div>
+                    </div>
                     <div className="note-1">
                         *Prices stated are generally for items at least SGD$300-$500 in retail value. For premium items >$500 in retail value, prices are negotiable.
                     </div>
                 </div>
-                <div className="container box-4">
+                <div className="container box-4" id="how">
                     <div className="grid-wrapper">
                         <div className="col-6 sparkle-girls">
                             <span className="image fit"><img src={pic03} alt="" /></span>
@@ -183,7 +189,7 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="container box-5">
+                <div className="container box-5" id="brands">
                     <div className="row grid-wrapper content">  
                         <h2>Brands we buy.</h2>
                         <div className="brandings">
@@ -212,7 +218,7 @@ class Homepage extends React.Component {
                 <div className="container box-6">
                     <h2>Clothes we've bought</h2>
 
-                    <div className="content">
+                    <div className="content show-desktop">
                         <Swiper {...params}>
                             <div className="clothes-container">
                                 <div className="clothes-picture">
@@ -260,6 +266,52 @@ class Homepage extends React.Component {
                             </div>
                         </Swiper>
                     </div>
+                    <div className="content show-mobile"> 
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe1} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">TALITHA</div>
+                                    <div className="info">Ashanti Geometric Print Silk Georgette Burgundy Dress</div>
+                                    <div className="price">Retail SGD $1,365</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">GUCCI</div>
+                                    <div className="info">Ecru Embellished Knit Beige Dress</div>
+                                    <div className="price">Retail SGD $3,675</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe3} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">REFORMATION</div>
+                                    <div className="info">Butterfly Midi Black Dress</div>
+                                    <div className="price">Retail SGD $593</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe4} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">RIXO LONDON</div>
+                                    <div className="info">Martha Silk Midi  Floral Printed Dress</div>
+                                    <div className="price">Retail SGD $738</div>
+                                </div>
+                            </div> 
+                    </div>
                     
                     <div className="hr"   id="contact-us">
                         <hr/>
@@ -305,9 +357,9 @@ class Homepage extends React.Component {
                     <div className="content">
                         <div className="title">
                             Ready to start the year fresh?
-                        </div>
-                        <div>
-                            <a href="#contact-us" onClick={() => console.log("button clicked")} className="yes-button button">I'm Interested!</a>
+                        </div>                         
+                        <div className="button-wrapper">
+                            <a className="interested-btn button nav-contact-us">YES!</a>
                         </div>
                     </div>
                 </div>

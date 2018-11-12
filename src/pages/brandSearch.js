@@ -4,6 +4,7 @@ import '../assets/css/styles.css';
 import FilterSearch from '../components/filterSearch';
 import BrandList from '../components/brandList';
 import Footer from "../components//Footer";
+import Layout from '../components/layout';
 
 import JSON from '../assets/brandList.json'
 
@@ -30,33 +31,23 @@ class BrandSearch extends Component {
     render() {
 
         return (
-            <div id="brandsearch-page">
-                <section className="main style1 box-1">
-                    <div className="grid-wrapper">
-                        <div className="col-6">                
-                            <p className="hashtag">                                   
-                                #SGFashionForGood
-                            </p>
+            <Layout>
+                <div id="brandsearch-page">
+                    <section id="search-bar">
+                        <div className="grid-wrapper">
+                            <div className="col-12">
+                                <FilterSearch brand={this.getBrand}/>
+                            </div>
                         </div>
-                        <div className="col-6">
-                            <Link to="index.html#contact-us" className="contact-us-btn button">Contact Us!</Link>
-                        </div>
-                    </div>
-                </section>
-                <section id="search-bar">
-                    <div className="grid-wrapper">
-                        <div className="col-12">
-                            <FilterSearch brand={this.getBrand}/>
-                        </div>
-                    </div>
-                </section>
-                <section className="brand-list">
-                        <BrandList items={
-                            (this.state.filtered.length === 0 && this.state.keyword.length === 0)? this.state.brands : this.state.filtered} />
-                </section>      
-    
-                <Footer />
-            </div>
+                    </section>
+                    <section className="brand-list">
+                            <BrandList items={
+                                (this.state.filtered.length === 0 && this.state.keyword.length === 0)? this.state.brands : this.state.filtered} />
+                    </section>      
+        
+                    <Footer />
+                </div>
+            </Layout>
         )
     }
 }
