@@ -13,10 +13,12 @@ import pic01 from '../assets/images/1.jpg'
 import pic02 from '../assets/images/2.png'
 import pic03 from '../assets/images/3.jpg'
 
-import clothe1 from '../assets/images/4.1.jpg'
+import clothe1 from '../assets/images/4.1.png'
 import clothe2 from '../assets/images/4.2.jpg'
 import clothe3 from '../assets/images/4.3.jpg'
 import clothe4 from '../assets/images/4.4.jpg'
+import clothe5 from '../assets/images/4.5.jpg'
+import clothe6 from '../assets/images/4.6.jpg'
 
 class Homepage extends React.Component {
     
@@ -25,13 +27,10 @@ class Homepage extends React.Component {
         const siteTitle = "Prelove.sg";
         
         const params = {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 0,
             freeMode: true,
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            }
+            loop: true
         };
         return (
             <Layout>
@@ -129,13 +128,13 @@ class Homepage extends React.Component {
                 </div>
                 <div className="container box-3" id="price">
                     <h2>Here’s our pricing guide*:</h2>
-                    <div className="grid-wrapper pricing show-desktop">
-                        <div className="col-6 left">
+                    <div className="pricing show-desktop">
+                        <div className="left">
                             Trade in >10 items<br/>
                             Trade in >10 items<br/>
                             Trade in >20 items
                         </div>
-                        <div className="col-6 right">
+                        <div className="right">
                             Get up to 70 SGD/piece<br/>
                             Get up to 90 SGD/piece<br/>
                             Get up to 120 SGD/piece
@@ -143,20 +142,23 @@ class Homepage extends React.Component {
                     </div>
                     <div className="pricing show-mobile-flex">
                         <div className="trade-in">
-                            <p className="trade-title title">Trade In</p>
-                            <p className="trade-items items">1-10 items</p>
-                            <p className="trade-items items">>10 items</p>
-                            <p className="trade-items items">>20 items</p> 
+                            <p className="trade-items items">Trade in >10 items</p>
+                            <p className="trade-items items">Trade in >10 items</p>
+                            <p className="trade-items items">Trade in >20 items</p> 
                         </div>
                         <div className="get-up">
-                            <p className="get-up-title title">Get up to</p>
-                            <p className="get-up-items items">70 SGD/piece</p>
-                            <p className="get-up-items items">90 SGD/piece</p>
-                            <p className="get-up-items items">120 SGD/piece</p>  
+                            <p className="get-up-items items">Get up to 70 SGD/piece</p>
+                            <p className="get-up-items items">Get up to 90 SGD/piece</p>
+                            <p className="get-up-items items">Get up to 120 SGD/piece</p>  
                         </div>
                     </div>
                     <div className="note-1">
-                        *Prices stated are generally for items at least SGD$300-$500 in retail value. For premium items >$500 in retail value, prices are negotiable.
+                        <p>
+                            *Prices stated are generally for items at least SGD$300-$500 in retail value. For premium items >$500 in retail value, prices are negotiable.
+                        </p>
+                    </div>
+                    <div className="divider-wrapper" >
+                        <div className="divider"></div>
                     </div>
                 </div>
                 <div className="container box-4" id="how">
@@ -192,7 +194,7 @@ class Homepage extends React.Component {
                 <div className="container box-5" id="brands">
                     <div className="row grid-wrapper content">  
                         <h2>Brands we buy.</h2>
-                        <div className="brandings">
+                        <div className="brandings show-desktop">
                             <div className="row grid-wrapper">
                                 <div className="col-3 logo1"> </div>
                                 <div className="col-3 logo2"> </div>
@@ -213,6 +215,30 @@ class Homepage extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="brandings show-mobile-flex">
+                            <div className="items">
+                                <div className="left">
+                                    <div className="brandings-item logo1"> </div>
+                                    <div className="brandings-item logo3"> </div>
+                                    <div className="brandings-item logo5"> </div>
+                                    <div className="brandings-item logo7"> </div>
+                                    <div className="brandings-item logo9"> </div>
+                                    <div className="brandings-item logo11"> </div>
+
+                                </div>
+                                <div className="right">
+                                    <div className="brandings-item logo2"> </div>
+                                    <div className="brandings-item logo4"> </div>
+                                    <div className="brandings-item logo6"> </div>
+                                    <div className="brandings-item logo8"> </div>
+                                    <div className="brandings-item logo10"> </div>
+                                    <div className="brandings-item logo12"> </div>
+                                </div> 
+                            </div> 
+                            <div className="view-more">
+                                <a href="/brandSearch">View more Brands ></a>
+                            </div> 
+                        </div>
                     </div>
                 </div>
                 <div className="container box-6">
@@ -225,6 +251,16 @@ class Homepage extends React.Component {
                                     <span className="image fit"><img src={clothe1} alt="" /></span>
                                 </div>
                                 <div className="clothes-details">
+                                    <div className="title">MM La Fleur</div>
+                                    <div className="info">The Dana Dress - Tuxedo</div>
+                                    <div className="price">Retail SGD $325</div>
+                                </div>
+                            </div>
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
                                     <div className="title">TALITHA</div>
                                     <div className="info">Ashanti Geometric Print Silk Georgette Burgundy Dress</div>
                                     <div className="price">Retail SGD $1,365</div>
@@ -232,7 +268,7 @@ class Homepage extends React.Component {
                             </div>
                             <div className="clothes-container">
                                 <div className="clothes-picture">
-                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                    <span className="image fit"><img src={clothe3} alt="" /></span>
                                 </div>
                                 <div className="clothes-details">
                                     <div className="title">GUCCI</div>
@@ -243,7 +279,7 @@ class Homepage extends React.Component {
                             <div className="clothes-container">
                                 <div className="clothes-picture">
                                     <span className="image fit">
-                                        <img src={clothe3} alt="" />
+                                        <img src={clothe4} alt="" />
                                     </span>
                                 </div>
                                 <div className="clothes-details">
@@ -255,13 +291,25 @@ class Homepage extends React.Component {
                             <div className="clothes-container">
                                 <div className="clothes-picture">
                                     <span className="image fit">
-                                        <img src={clothe4} alt="" />
+                                        <img src={clothe5} alt="" />
                                     </span>
                                 </div>
                                 <div className="clothes-details">
                                     <div className="title">RIXO LONDON</div>
                                     <div className="info">Martha Silk Midi  Floral Printed Dress</div>
                                     <div className="price">Retail SGD $738</div>
+                                </div>
+                            </div> 
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe6} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">Karen Millen</div>
+                                    <div className="info">Dot Collection Day Dress</div>
+                                    <div className="price">Retail SGD $314</div>
                                 </div>
                             </div>
                         </Swiper>
@@ -272,6 +320,16 @@ class Homepage extends React.Component {
                                     <span className="image fit"><img src={clothe1} alt="" /></span>
                                 </div>
                                 <div className="clothes-details">
+                                    <div className="title">MM La Fleur</div>
+                                    <div className="info">The Dana Dress - Tuxedo</div>
+                                    <div className="price">Retail SGD $325</div>
+                                </div>
+                            </div> 
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                </div>
+                                <div className="clothes-details">
                                     <div className="title">TALITHA</div>
                                     <div className="info">Ashanti Geometric Print Silk Georgette Burgundy Dress</div>
                                     <div className="price">Retail SGD $1,365</div>
@@ -279,7 +337,7 @@ class Homepage extends React.Component {
                             </div>
                             <div className="clothes-container">
                                 <div className="clothes-picture">
-                                    <span className="image fit"><img src={clothe2} alt="" /></span>
+                                    <span className="image fit"><img src={clothe3} alt="" /></span>
                                 </div>
                                 <div className="clothes-details">
                                     <div className="title">GUCCI</div>
@@ -290,7 +348,7 @@ class Homepage extends React.Component {
                             <div className="clothes-container">
                                 <div className="clothes-picture">
                                     <span className="image fit">
-                                        <img src={clothe3} alt="" />
+                                        <img src={clothe4} alt="" />
                                     </span>
                                 </div>
                                 <div className="clothes-details">
@@ -302,7 +360,7 @@ class Homepage extends React.Component {
                             <div className="clothes-container">
                                 <div className="clothes-picture">
                                     <span className="image fit">
-                                        <img src={clothe4} alt="" />
+                                        <img src={clothe5} alt="" />
                                     </span>
                                 </div>
                                 <div className="clothes-details">
@@ -310,53 +368,78 @@ class Homepage extends React.Component {
                                     <div className="info">Martha Silk Midi  Floral Printed Dress</div>
                                     <div className="price">Retail SGD $738</div>
                                 </div>
-                            </div> 
-                    </div>
-                    
-                    <div className="hr"   id="contact-us">
-                        <hr/>
-                    </div>
+                            </div>  
+                            <div className="clothes-container">
+                                <div className="clothes-picture">
+                                    <span className="image fit">
+                                        <img src={clothe6} alt="" />
+                                    </span>
+                                </div>
+                                <div className="clothes-details">
+                                    <div className="title">Karen Millen</div>
+                                    <div className="info">Dot Collection Day Dress</div>
+                                    <div className="price">Retail SGD $314</div>
+                                </div>
+                            </div>
+                    </div> 
+                </div> 
+                <div className="divider-wrapper" >
+                    <div className="divider"></div>
                 </div>
                 <div className="container box-7">
-                    <div className="content ">
-                        <div className="title">
-                            We’re a group of passionate, fashion-loving women. 
-                            Want to find out more about being sustainably fashionable?
-                            Feel free to contact us! 
+                    <div className="content">
+                        <div className="context"> 
+                            <div className="title">
+                                What's happens next?
+                            </div>
+                            <div className="sub-title">
+                                <p> 
+                                    We’ve built a community made up of some of the most fashion-savvy movers and shakers in Singapore who’ve each traded in their designer clothing to build a shared wardrobe accessible by a monthly subscription.  
+                                    <br/><br/>
+                                    Want to join us? Trade in your clothing!
+                                </p>
+                            </div> 
                         </div>
                         <div className="row grid-wrapper">
                             <div className="col-6 contact-details">
                             <MailChimpForm/>
                             </div>
-                            <div className="col-6 address">
-                                <div className="row">
-                                    <div className="col-2">
-                                        Address:
+                            <div className="col-6 address-contact">
+                                <div className="address">
+                                    <div className="-title">
+                                        <p>
+                                            Address:
+                                        </p>
                                     </div>
-                                    <div className="col-6 off-1">
-                                        60 Paya Lebar Road Paya Lebar Square #07-49 Singapore 438103
+                                    <div className="address-context">
+                                        <p>
+                                            60 Paya Lebar Road <br/> Paya Lebar Square #07-49 <br/> Singapore 438103
+                                        </p>
                                     </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-2">
+                                </div> 
+                                <div className="contact">
+                                    <div className="contact-title">
+                                        <p>
                                         Contact:
+                                        </p>
                                     </div>
-                                    <div className="col-6 off-1">
-                                        +65 8253 4168 <br/>
-                                        hello@sgfashionforgood.com
+                                    <div className="contact-context">
+                                        <p>
+                                        hello@prelove.sg
+                                        </p>
                                     </div>
-                                </div>
+                                </div> 
                                 <div className="map">
                                     <img src={require('../assets/images/map.png')}/>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
                 <div className="container box-8">
                     <div className="content">
                         <div className="title">
-                            Ready to start the year fresh?
+                            Ready to start the<br/> year fresh?
                         </div>                         
                         <div className="button-wrapper">
                             <a className="interested-btn button nav-contact-us">YES!</a>

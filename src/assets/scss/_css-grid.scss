@@ -80,14 +80,7 @@
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
-	}
-	#landing-page .box-5 .content .brandings .row .col-3{
-		display: inline-block;
-		height: 40px;
-		width: 170px;	
-		margin: 0.5em !important;
 	} 
-	
 	#landing-page .box-6{
 		margin-top: 1em;
 	}
@@ -99,12 +92,7 @@
 
 	#landing-page .box-8 .content a{
 		padding: 0em 1em  !important;
-	} 
-
-	 
-	#landing-page .box-7 .content .address{
-		text-align: center !important
-	}
+	}  
 
 	#brandsearch-page .brand-list .row.grid-wrapper{
 		width: 90% !important;
@@ -229,20 +217,14 @@
 
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
-		width: 50%;
+		width: 80%;
 		display: flex;
 		flex-direction: column;
 		justify-self: center;
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
-	}
-	#landing-page .box-5 .content .brandings .row .col-3{
-		display: inline-block;
-		height: 34px;
-		width: 82px;
-		margin: 0.5em !important;
-	}
+	} 
 	#landing-page .box-5 .content .brandings .view-more{
 		text-align: center !important;
 	}
@@ -271,11 +253,7 @@
 	#landing-page .box-6 .content .clothes-picture img{		
 		width: 120px !important;
 		height: 194px !important;
-	} 
-	#landing-page .box-8 .title{
-		font-size: 24px !important;
-		color: #FFFFFF;
-	} 
+	}  
 }
 
 @media screen and (max-width: 440px) {
@@ -285,8 +263,9 @@
 	}
 
 	#landing-page .box-1 .details .content p{
-		font-size: 1.5em !important;
-		margin-bottom: .5em !important;
+		line-height: 22px;
+		font-size: 20px;
+		letter-spacing: 2px;
 	}
 
 	#landing-page .box-1 .details .content a{
@@ -332,20 +311,21 @@
 	}
 
 	#landing-page .box-5 .content{
-		padding: 1em 0 !important;
+		padding: 60px 0 !important;
 	}
 
 	#landing-page .box-5 .content h2{
 		text-align: center !important;
 		top: 100px !important;
-		font-size: 30px !important;
+		font-size: 20px !important;
+		letter-spacing: 2px;
 		left: 0 !important;
 		margin-top: 1em;
 	}
 	
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
-		width: 50%;
+		width: 80%;
 		display: flex;
 		flex-direction: column;
 		justify-self: center;
@@ -357,44 +337,26 @@
 		margin: 0 !important;
 		padding: 0 !important;
 		width: 100%;
+	}  
+	#landing-page .box-6 {
+		padding: 30px 0 !important;
 	}
-	#landing-page .box-5 .content .brandings .row .col-3{
-		display: inline-block;
-		height: 20px;
-		width: 42px;
-		margin: .5em !important;
-	}
-	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 10px !important;
-	}
-	
 	#landing-page .box-6 h2{
-		font-weight: bold;
-		font-size: 32px;
-		padding: 1em 0 0 0;
+		font-size: 20px;
 	}
 
 	#landing-page .box-6 .content .clothes-details .title{
-		font-size: 16px !important;
+		font-size: 15px !important;
 		letter-spacing: 1px !important;
 	}
 
 	#landing-page .box-6 .content .clothes-picture img{		
-		width: 120px !important;
-		height: 194px !important;
+		width: 196px !important;
+		height: 279px !important;
 	}
-	#landing-page .box-7 .content .address {
-		padding: 0 !important;
+	#landing-page .box-7 .content .context{
+		width: 80% !important;
 	} 
-
-	#landing-page .box-7 .content .address{
-		text-align: center;
-	} 
-
-	#landing-page .box-8 .title{	
-		color: #FFFFFF;
-	    font-size: 2em;
-	}
 
 	#landing-page .box-8 .content a{
 		padding: 0em 1em  !important;
@@ -449,12 +411,6 @@
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
 	}
-	#landing-page .box-5 .content .brandings .row .col-3{
-		display: inline-block;
-		height: 15px;
-		width: 43px;
-		margin: 0.3em !important;
-	}
 	#landing-page .box-5 .content .brandings .view-more a{
 		font-size: 14px !important;
 	}
@@ -495,13 +451,7 @@
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
-	}
-	#landing-page .box-5 .content .brandings .row .col-3{
-		display: inline-block;
-		height: 15px;
-		width: 38px;
-		margin: 0.3em !important;
-	}
+	} 
 	#landing-page .box-5 .content .brandings .view-more a{
 		font-size: 12px !important;
 	}

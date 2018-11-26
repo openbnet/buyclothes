@@ -28,7 +28,22 @@ class Template extends React.Component {
                 $('html, body').animate({scrollTop: $("#"+id).offset().top - 100 }, 500);
             }
         }, 500); 
+
         
+      $(window).scroll(function() {
+        const scrollTop = $(this).scrollTop();
+ 
+        if (scrollTop >= ($('#about').offset().top-50) && scrollTop <=  ($('#price').offset().top-50)){
+            $('.header-container.show-mobile-flex > .ham-menu').css('display', 'none')
+            $('.header-container.show-mobile-flex > .ham-menu.white').css('display', 'block')
+            $('.header-container.show-mobile-flex > .header-title p').css('color', '#fff');
+        } else {
+            $('.header-container.show-mobile-flex > .header-title p').css('color', '#FF6B00') 
+            $('.header-container.show-mobile-flex > .ham-menu').css('display', 'block')
+            $('.header-container.show-mobile-flex > .ham-menu.white').css('display', 'none')
+        }
+
+      })
         $(".ham-menu").on("click", function(){
             $('.side-menu').css("left", "0px");
             $('body').css("overflow-y", "hidden");
