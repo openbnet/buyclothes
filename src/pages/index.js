@@ -386,7 +386,7 @@ class Homepage extends React.Component {
                 <div className="divider-wrapper" >
                     <div className="divider"></div>
                 </div>
-                <div className="container box-7">
+                <div className="container box-7" id="contact-us">
                     <div className="content">
                         <div className="context"> 
                             <div className="title">

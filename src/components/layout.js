@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/scss/main.scss";
 import $ from 'jquery';
+import { navigate } from 'gatsby'
 
 import Header from "./Header";
 import MailChimpForm from "./mailChimpForm";
@@ -66,7 +67,7 @@ class Template extends React.Component {
                 $('html, body').animate({
                 scrollTop: $("#about").offset().top }, 500);
             }else{
-                window.location.href =  "/index.html#about";
+                navigate('/index.html#about')
             }
         });
         $('.nav-price').on('click', function() {
@@ -74,7 +75,7 @@ class Template extends React.Component {
                 $('html, body').animate({
                 scrollTop: $("#price").offset().top }, 500);
             }else{
-                window.location.href =  "/index.html#price";
+                navigate('/index.html#price')
             }
         });
         $('.nav-how').on('click', function() {
@@ -82,7 +83,7 @@ class Template extends React.Component {
                 $('html, body').animate({
                 scrollTop: $("#how").offset().top }, 500);
             }else{
-                window.location.href =  "/index.html#how";
+                navigate('/index.html#how')
             }
         });
         
@@ -91,15 +92,15 @@ class Template extends React.Component {
                 $('html, body').animate({
                 scrollTop: $("#brands").offset().top }, 500);
             }else{
-                window.location.href =  "/index.html#brands";
+                navigate('/index.html#brands')
             }
         });
         $('.nav-contact-us').on('click', function() {
             if(window.location.pathname == '/' ||  window.location.pathname.indexOf("index.html") > -1){ 
                 $('html, body').animate({
-                scrollTop: $("#contact-us").offset().top - 100 }, 500);
+                scrollTop: $("#contact-us").offset().top }, 500);
             }else{
-                window.location.href =  "/index.html#contact-us";
+                navigate('/index.html#contact-us')
             }
         });
 
