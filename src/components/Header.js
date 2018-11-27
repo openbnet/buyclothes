@@ -12,7 +12,7 @@ class Header extends React.Component {
                         <a className="nav-item nav-about">About</a>
                         <a className="nav-item nav-price">Price</a>
                         <a className="nav-item nav-how">How</a>
-                        <a className="nav-item nav-brands">Brandslist</a>
+                        <a className="nav-item nav-brands">Brands</a>
                     </div>
                     <div className="button-wrapper">
                         <a className="contact-us-button button nav-contact-us">Contact Us</a>
@@ -35,7 +35,7 @@ class Header extends React.Component {
                     <a className="nav-item nav-about">About</a>
                     <a className="nav-item nav-price">Price</a>
                     <a className="nav-item nav-how">How</a>
-                    <a className="nav-item nav-brands">Brandslist</a>
+                    <a className="nav-item nav-brands">Brands</a>
                 </div>
             </section>
         )

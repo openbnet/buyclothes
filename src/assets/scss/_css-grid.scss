@@ -66,15 +66,7 @@
 	#landing-page .box-5 .content{
 		padding: 1em 0 !important;
 	}
-
-	#landing-page .box-5 .content h2{
-		text-align: center !important;
-		top: 100px !important;
-		font-size: 30px !important;
-		left: 0 !important;
-		margin-top: 1em;
-	} 
-
+ 
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
 	}
@@ -129,25 +121,14 @@
 	} 
 	#landing-page .box-5{
 		height: 896px;
-		margin-bottom: 3em;
-	}
-
-	#landing-page .box-5 .content .brandings{
-		width: 790px;
-	}
-	
-	#landing-page .box-5 .content h2 {
-		position: absolute	;
-		margin: 3em;
-	}
-	
+	} 
 	#landing-page  .box-5 .content .brandings{
-		position: relative;
-		top: 300px;
-		left: 200px;
 		height: 407px;
 		background: rgba(255, 255, 255, 0.9);
-		padding: 9% 9% 0 9%;	}
+		padding: 5% 5% 0 5%;
+		width: 747px;
+		align-self: center;
+	}
 
 	#landing-page .box-8{
 		height: 977px;
@@ -205,16 +186,7 @@
 
 	#landing-page .box-5 .content{
 		padding: 1em 0 !important;
-	}
-
-	#landing-page .box-5 .content h2{
-		text-align: center !important;
-		top: 100px !important;
-		font-size: 30px !important;
-		left: 0 !important;
-		margin-top: 1em;
 	} 
-
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
 		width: 80%;
@@ -227,11 +199,7 @@
 	} 
 	#landing-page .box-5 .content .brandings .view-more{
 		text-align: center !important;
-	}
-	#landing-page .box-5 .content .brandings .view-more a{ 
-		font-size: 17px !important;
-		letter-spacing: 2px; 
-	}
+	} 
 	#landing-page .box-6{
 		margin-top: 1em;
 	}
@@ -263,7 +231,7 @@
 	}
 
 	#landing-page .box-1 .details .content p{
-		line-height: 22px !important;
+		line-height: 24px !important;
 		font-size: 20px !important;
 		letter-spacing: 2px !important;
 		width: 60% !important;
@@ -308,21 +276,9 @@
 
 	#landing-page .box-5 {
 		background-size: cover !important;
-     background-position: top !important;
-	}
-
-	#landing-page .box-5 .content{
+		background-position: top !important;
 		padding: 60px 0 !important;
-	}
-
-	#landing-page .box-5 .content h2{
-		text-align: center !important;
-		top: 100px !important;
-		font-size: 20px !important;
-		letter-spacing: 2px;
-		left: 0 !important;
-		margin-top: 1em;
-	}
+	} 
 	
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
@@ -361,6 +317,9 @@
 
 	#landing-page .box-8 .content a{
 		padding: 0em 1em  !important;
+		width: 180px !important;
+		height: 40px !important;
+		font-size: 16px !important;
 	}
 	#brandsearch-page .box-1 .col-6 a{
 		padding: 0 1em !important;
@@ -396,14 +355,6 @@
 	
 	#landing-page .box-5 .content{
 		padding: 0.5em 0 !important;
-	}
-
-	#landing-page .box-5 .content h2{
-		text-align: center !important;
-		top: 100px !important;
-		font-size: 30px !important;
-		left: 0 !important;
-		margin-top: 1em;
 	} 
 
 	#landing-page .box-5 .content .brandings {
@@ -411,11 +362,7 @@
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
-	}
-	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 14px !important;
-	}
-	
+	} 
 	#brandsearch-page .box-1 .col-6 a{
 		padding: 0 1em !important;
 	}
@@ -441,21 +388,13 @@
 
 	#landing-page .box-5 .content{
 		padding: 0.5em 0 !important;
-	}
-
-	#landing-page .box-5 .content h2{
-		margin: .5em !important;
 	} 
-
 	#landing-page .box-5 .content .brandings {
 		background: rgba(255, 255, 255, 0.9);
 	}
 	#landing-page .box-5 .content .brandings .row {
 		display: block;
-	} 
-	#landing-page .box-5 .content .brandings .view-more a{
-		font-size: 12px !important;
-	}
+	}  
 	#brandsearch-page .box-1 .col-6 a{
 		padding: 0 1em !important;
 	}

@@ -993,6 +993,10 @@
 		#landing-page .box-1 .content{
 			margin: 0 !important;
 		}
+		#landing-page .box-1 .details .button-wrapper{
+			width: 200px !important;
+			height: 37px !important;
+		}
 		#header{
 			display: none;
 		}
@@ -1024,6 +1028,21 @@
 			margin: 0 0 2em 0;
 			padding-left: 1.25em;
 		} 
+
+		#landing-page .box-5 .content h2{
+			position: unset !important;
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: 2px;
+			margin-bottom: 30px !important;
+		}
+		#landing-page .box-5 .content{
+			align-items: center !important;
+			width: 90% !important;
+		}
+		#landing-page .box-5 .content .brandings .view-more a{
+			font-size: 14px !important;
+		}
 		.hr hr{
 			margin: unset !important;
 		}
@@ -1108,9 +1127,12 @@
 		}
 
 		#landing-page .box-7 .content .contact-details .mailchimp-container form button{
-			height: 50px !important;
+			height: 42px !important;
+			font-size: 11px !important;
+			width: 200px !important;
 		}
-
+		
+		
 		#landing-page .box-7 .content .contact-details .mailchimp-container form input{
 			font-size: 16px !important;
 		}
@@ -1171,7 +1193,7 @@
 				padding: 60px 15px 40px!important;
 			}
 			#landing-page .box-3 .note-1{
-				margin: 10px 0 35px !important;
+				margin: 15px 0 35px !important;
 			}
 			#landing-page .box-3 .note-1 p{
 				font-size: 12px !important;
@@ -1188,7 +1210,20 @@
 /* XXSmall */
 
 	@include breakpoint(xxsmall) {
+		#landing-page .box-3 .pricing.show-mobile-flex .trade-title, #landing-page .box-3 .pricing.show-mobile-flex .get-up-title{ 
+			margin: 0 10px 10px !important;
+		}
+		
+		#landing-page .box-3 .pricing.show-mobile-flex .trade-items{
+			padding-right: 10px !important;
+		}
+		#landing-page .box-3 .pricing.show-mobile-flex .get-up-items{
 
+			padding-left: 10px !important;
+		}
+		#landing-page .box-3 .pricing.show-mobile-flex .items{
+			font-size: 14px !important;
+		}
 		/* Basic */
 
 			html, body {

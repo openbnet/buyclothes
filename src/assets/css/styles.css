@@ -18,8 +18,7 @@
 /* header */
 #custom-header .header-container{ 
     font-family: Helvetica;
-    line-height: normal;
-    font-size: 20px;
+    line-height: normal; 
 	background-color: #fff;
 	width: calc(100vw - 60px); 
 	display: flex;
@@ -40,12 +39,13 @@
 	color: #000;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 #custom-header .header-container .button-wrapper .contact-us-button{ 
-    width: 228px;
-    height: 57px;
-    background: #FF6B00;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
 }
 #custom-header .header-container.show-mobile-flex{  
     width: 100vw;
@@ -197,7 +197,7 @@
 /* box-3 */
 #landing-page .box-3{
     text-align: center;
-    padding: 100px 40px;
+    padding: 80px 40px;
 }
 
 #landing-page .box-3 h2{
@@ -241,24 +241,25 @@
     margin-bottom: 1em;
     line-height: 30px;
     border-bottom: 1px solid; 
-    margin: 0 2rem 2em;
+    margin: 0 30px 10px;
 }
 
 
 #landing-page .box-3 .pricing.show-mobile-flex .items{ 
     line-height: normal;
-    font-size: 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
     margin: unset;
 }
 
 #landing-page .box-3 .pricing.show-mobile-flex .trade-items{ 
     border-right: 1px solid;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 #landing-page .box-3 .pricing.show-mobile-flex .get-up-items{ 
     text-align: left;
-    margin-inline-start: 10px;
+    padding-left: 20px;
 }
 #landing-page .box-3 .note-1{
     display: flex;
@@ -276,10 +277,18 @@
 }
 
 /* box-4 */
+#landing-page .box-4 {
+    padding-bottom: 50px;
+}
 #landing-page .box-4 .grid-wrapper{
     width: 90vw;
 }
-
+#landing-page .box-4 .sparkle-girls{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+}
 #landing-page .box-4 .content{
     text-align: center;
     margin: 5em 0;
@@ -289,6 +298,8 @@
     color: #FF6B00;
     font-weight: bold;
     text-align: left;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
 #landing-page .box-4 .content ol{
@@ -298,7 +309,7 @@
 #landing-page .box-4 .content ol > li {
     text-align: left;
     line-height: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #000000;
     font-family: Helvetica;
@@ -307,6 +318,7 @@
 
 #landing-page .box-4 .content .note-2{
     text-align: left;
+    font-size: 16px;
 }
 
 /* box-5 */
@@ -316,16 +328,27 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    padding: 40px 60px 70px;
+    display: flex;
+    justify-content: center;
 }
 
 #landing-page .box-5 .content{
-    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    flex-direction: column;
+    width: 80%;
 }
 
 #landing-page  .box-5 .content h2{
     color: #FF6B00;
     font-weight: bold;
     text-align: left;
+    top: -100px;
+    position: relative;
+    margin: 0;
 }
 
 #landing-page .box-5 .content .brandings .row.grid-wrapper{
@@ -362,7 +385,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 56px;
-    width: 70%;
+    width: 60%;
     margin: 10px 0;
 }
 #landing-page .box-5 .content .brandings.show-mobile-flex .view-more{
@@ -426,7 +449,7 @@
 }
 #landing-page .box-5 .content .brandings .view-more a{
     line-height: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #FF6B00;    
 }
@@ -438,6 +461,7 @@
 #landing-page .box-6 h2{
     color: #FF6B00;
     text-align: center;
+    font-weight: 700;
 }
 #landing-page .box-6 .content .clothes-picture image.fit{
     justify-content: center;
@@ -518,7 +542,16 @@
 #landing-page .box-6 .content .contact-details form{
     text-align: center
 } 
+#landing-page .box-6 .swiper-pagination
+{
+    position: relative !important;
+    bottom: 0 !important;
 
+} 
+#landing-page .box-6 .swiper-pagination  .swiper-pagination-bullet-active
+{
+    background: #000 !important;
+} 
 #landing-page .box-7{
     padding: 40px 0;
 }
