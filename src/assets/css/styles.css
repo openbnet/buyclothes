@@ -556,7 +556,39 @@
     width: 417px;
     height: 228px;
 }
-#landing-page .box-7 .content .contact-details form button{
+
+#landing-page .box-7 .content .contact-details .mailchimp-container {
+    border: 1px solid #FF6B00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#landing-page .box-7 .content .contact-details .mailchimp-container .submit-button-wrapper{
+    display: flex;
+    justify-content: center;
+} 
+#landing-page .box-7 .content .contact-details .mailchimp-container .form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#landing-page .box-7 .content .contact-details .mailchimp-container form{
+    width: 80%;
+}
+#landing-page .box-7 .content .contact-details .mailchimp-container form.success{
+    display: none;
+}
+
+#landing-page .box-7 .content .contact-details .mailchimp-container form input{
+    font-size: 20px;
+    height: 2em;
+    margin-bottom: 20px;
+    color: #000;
+}
+#landing-page .box-7 .content .contact-details .mailchimp-container form button{
     width: 235px;
     height: 59px;
     background: #FF6B00;
@@ -566,10 +598,25 @@
     font-size: 15px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: white;
-    margin-top: 30px;
+    color: white; 
     cursor: pointer;
-}  
+} 
+#landing-page .box-7 .content .contact-details .mailchimp-container .success-content{
+    color: black;
+    width: 70%;
+} 
+#landing-page .box-7 .content .contact-details .mailchimp-container .success-content .success-title{
+    line-height: normal;
+    font-size: 47px;
+    letter-spacing: 2px;
+    margin: 0 0 1em 0;
+}
+
+#landing-page .box-7 .content .contact-details .mailchimp-container .success-content .success-sub-title{
+    line-height: normal;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
 
 /* box-8 */
 #landing-page .box-8 .content{

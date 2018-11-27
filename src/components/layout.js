@@ -102,6 +102,12 @@ class Template extends React.Component {
                 window.location.href =  "/index.html#contact-us";
             }
         });
+
+        // if($('.msg-alert p').text() != "Thank you for subscribing!"){
+        //     return;
+        // }else{
+        //     $(".box-7 .content . grid-wrapper .contact-details").css("display","none")
+        // }
     });
     }
 
