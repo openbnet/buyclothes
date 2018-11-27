@@ -30,7 +30,11 @@ class Homepage extends React.Component {
             slidesPerView: 4,
             spaceBetween: 0,
             freeMode: true,
-            loop: true
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            },
         };
         return (
             <Layout>
@@ -142,15 +146,18 @@ class Homepage extends React.Component {
                     </div>
                     <div className="pricing show-mobile-flex">
                         <div className="trade-in">
-                            <p className="trade-items items">Trade in >10 items</p>
-                            <p className="trade-items items">Trade in >10 items</p>
-                            <p className="trade-items items">Trade in >20 items</p> 
+                            <p className="trade-title title">Trade In</p>
+                            <p className="trade-items items">1-10 items</p>
+                            <p className="trade-items items">>10 items</p>
+                            <p className="trade-items items">>20 items</p> 
                         </div>
                         <div className="get-up">
-                            <p className="get-up-items items">Get up to 70 SGD/piece</p>
-                            <p className="get-up-items items">Get up to 90 SGD/piece</p>
-                            <p className="get-up-items items">Get up to 120 SGD/piece</p>  
+                            <p className="get-up-title title">Get up to</p>
+                            <p className="get-up-items items">70 SGD/piece</p>
+                            <p className="get-up-items items">90 SGD/piece</p>
+                            <p className="get-up-items items">120 SGD/piece</p>  
                         </div>
+
                     </div>
                     <div className="note-1">
                         <p>
@@ -192,7 +199,7 @@ class Homepage extends React.Component {
                     </div>
                 </div>
                 <div className="container box-5" id="brands">
-                    <div className="row grid-wrapper content">  
+                    <div className="row content">  
                         <h2>Brands we buy.</h2>
                         <div className="brandings show-desktop">
                             <div className="row grid-wrapper">
@@ -430,7 +437,9 @@ class Homepage extends React.Component {
                                     </div>
                                 </div> 
                                 <div className="map">
-                                    <img src={require('../assets/images/map.png')}/>
+                                    <a href="https://www.google.com.ph/maps/place/60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051/@1.3182389,103.8926074,16z/data=!4m13!1m7!3m6!1s0x31da1818677e43ff:0x9053328cc088d24b!2s60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051!3b1!8m2!3d1.3191725!4d103.8925563!3m4!1s0x31da1818677e43ff:0x9053328cc088d24b!8m2!3d1.3191725!4d103.8925563" target="_blank">
+                                        <img src={require('../assets/images/map.png')}/>
+                                    </a>
                                 </div>
                             </div> 
                         </div>
