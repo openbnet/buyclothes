@@ -1,5 +1,6 @@
 import React from 'react'
 import minimize from "../assets/images/minimize.png";
+import minimizeWhite from "../assets/images/minimize-white.png";
 
 import whiteClose from "../assets/images/white-close.svg" ;
 class Header extends React.Component {
@@ -20,6 +21,9 @@ class Header extends React.Component {
                 <div className="header-container show-mobile-flex"> 
                     <div className="ham-menu">
                         <img src={minimize} />
+                    </div>
+                    <div className="ham-menu white">
+                        <img src={minimizeWhite} />
                     </div>
                     <div className="header-title">
                         <p> #PRELOVESG </p>

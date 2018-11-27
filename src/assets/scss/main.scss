@@ -541,7 +541,7 @@
 
 		&.fit {
 			display: block;
-			margin: 0 0 _size(element-margin) 0;
+			margin: 0 0 1em 0;
 			width: 100%;
 
 			img {
@@ -554,7 +554,7 @@
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 1em 0;
 		padding-left: 1.25em;
 
 		li {
@@ -952,12 +952,7 @@
 
 /* Large */
 
-	@include breakpoint(large) {
-
-		
-		#landing-page .box-7 .content .title{  
-			padding: 0 10rem !important;
-		}
+	@include breakpoint(large) { 
 
 		#landing-page .box-8{
 			height: 70vh;
@@ -974,11 +969,7 @@
 		}
 		#landing-page .box-1 .content{
 			margin: 0 !important;
-		} 
-		
-		#landing-page .box-7 .content .title{  
-			padding: 0 5rem !important;
-		}
+		}  
 		
 		#landing-page .box-7 .content .contact-details{
 			text-emphasis: center;
@@ -991,9 +982,10 @@
 
 /* Small */
 
-	@include breakpoint(small) {
-		
-
+	@include breakpoint(small) { 
+		#landing-page .box-1{
+			margin-top: 100px;
+		}
 		#landing-page .box-1 .flower-dress { 
 			margin-top: 25px;
 		}
@@ -1019,30 +1011,19 @@
 			font-size: 1.2em;  
 		} 
 
+		#landing-page .box-2 .service{
+			margin: 0 !important;
+		}
+		
 		#landing-page .box-3 h2{
 			font-size: 20px;
 			letter-spacing: 2px; 
-		}
-		#landing-page .box-4 .content h2{
-			font-size: 20px; 
-			letter-spacing: 2px; 
-		}
-		#landing-page .box-4 .content ol > li{
-			font-size: 16px !important;
-			letter-spacing: 2px !important; 
 		}
 		#landing-page .box-4 .content .note-2{
 			font-size: 14px !important;  
 			margin: 0 0 2em 0;
 			padding-left: 1.25em;
-		}
-		#landing-page .box-7 .content .title{ 
-			font-size: 18px !important; 
-		}
-		
-		#landing-page .box-7 .content .title{  
-			padding: 0 3rem !important;
-		}
+		} 
 		.hr hr{
 			margin: unset !important;
 		}
@@ -1062,11 +1043,32 @@
 		#custom-header .header-container.show-mobile-flex .header-title p{ 
 			font-size: 12px;  
 		}
-
+		#landing-page .box-1 .grid-wrapper{
+			width: 100% !important;
+		}
+		#landing-page .box-1 .content{
+			padding: 0 !important;
+		}
+		#landing-page .box-1 .flower-dress{
+			width: 80%;
+			margin: 40px auto;
+		}
 		#landing-page .box-2 .service .title-text{ 
 			font-size: 22px !important; 
 			letter-spacing: 2px !important;
 			text-align: center !important;
+			line-height: normal !important;
+			padding: 60px 20px;
+		}
+
+		#landing-page .box-2 .service .list{ 
+			padding: 60px 0;
+		}
+
+
+		#landing-page .box-2 .service .list .text{
+			font-size: 18px !important;
+			letter-spacing: 2px !important;
 		}
 
 		#landing-page .box-2 .service .hr{ 
@@ -1079,6 +1081,65 @@
 
 		#landing-page .box-2 .service .camera-list, #landing-page .box-2 .service .x-list{
 			margin-bottom: 2em !important;
+		}
+
+		#landing-page .box-4 .content h2{
+			font-size: 20px; 
+			letter-spacing: 2px; 
+			padding: 40px 0;
+			margin: 0;
+		}
+		#landing-page .box-4 .content ol > li{
+			font-size: 18px !important;
+			letter-spacing: 2px !important;
+			line-height: 20px !important;
+			margin-bottom: 30px;
+		}
+		#landing-page .box-4 .content ol > li:last-child{
+
+			margin-bottom: unset;
+		} 
+
+		#landing-page .box-7 .content .contact-details .mailchimp-container form,		#landing-page .box-7 .content .contact-details .mailchimp-container{
+			margin: 20px 0 !important;
+		}
+
+		#landing-page .box-7 .content .contact-details .mailchimp-container form button{
+			height: 50px !important;
+		}
+
+		#landing-page .box-7 .content .contact-details .mailchimp-container form input{
+			font-size: 16px !important;
+		}
+
+		#landing-page .box-7 .content .contact-details .mailchimp-container .success-content .success-title{
+			font-size: 20px !important;
+			letter-spacing: 2px !important;
+		} 
+		#landing-page .box-7 .content .contact-details .mailchimp-container .success-content{
+			height: 220px;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			margin: 20px 0;
+		}
+	
+		#landing-page .box-7 .content .contact-details .mailchimp-container .success-content .success-sub-title{
+			font-size: 17px !important;
+			margin:  0 !important;
+		}
+		#landing-page .box-8 .title{	
+			line-height: 44px !important;
+			font-size: 40px !important;
+			text-align: center !important;
+			letter-spacing: 2px !important;
+			margin-bottom: 20px;
+		
+		}
+
+		#landing-page .box-8 .content{
+			height: 80vh !important;
+			background-position: 30% !important;
 		}
 		/* Footer */
 
@@ -1100,6 +1161,24 @@
 					}
 				}
 			}
+			#landing-page .box-3 h2{
+				margin-bottom: 5px !important;
+			}
+			#landing-page .box-3{
+				padding: 60px 15px 40px!important;
+			}
+			#landing-page .box-3 .note-1{
+				margin: 10px 0 35px !important;
+			}
+			#landing-page .box-3 .note-1 p{
+				font-size: 12px !important;
+				margin: 0 !important;
+				width: 80% !important;
+			}
+
+			#landing-page .box-7 .content  .map img{
+				width: 100% !important;
+			} 
 
 	}
 
