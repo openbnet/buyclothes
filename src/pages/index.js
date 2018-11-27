@@ -130,7 +130,7 @@ class Homepage extends React.Component {
                     <h2>Here’s our pricing guide*:</h2>
                     <div className="pricing show-desktop">
                         <div className="left">
-                            Trade in >10 items<br/>
+                            Trade in 1-10 items<br/>
                             Trade in >10 items<br/>
                             Trade in >20 items
                         </div>
