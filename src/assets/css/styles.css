@@ -210,70 +210,54 @@
     letter-spacing: 2px;
     color: #000000;
     width: 100%;
-}
-#landing-page .box-3 .pricing{ 
     display: flex;
     justify-content: space-evenly;
-} 
-
-#landing-page .box-3 .pricing .left{ 
-    width: 50%;
-    border-right: 1px solid;
-    text-align: right;
-    padding: 0 10px;
-} 
-
-#landing-page .box-3 .pricing .right{ 
-    width: 50%;
-    text-align: left;
-    padding: 0 10px;
-} 
-
-#landing-page .box-3 .pricing.show-mobile-flex .trade-in,#landing-page .box-3 .pricing.show-mobile-flex .get-up{ 
-    width: 50%;
 }
+#landing-page .box-3 .pricing-table{ 
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+} 
 
-#landing-page .box-3 .pricing.show-mobile-flex .trade-title, #landing-page .box-3 .pricing.show-mobile-flex .get-up-title{ 
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: #000000; 
-    margin-bottom: 1em;
-    line-height: 30px;
-    border-bottom: 1px solid; 
-    margin: 0 30px 10px;
+#landing-page .box-3 .pricing-table .trade-items{ 
+    width: 50%;
+} 
+
+#landing-page .box-3 table, #landing-page .box-3  td,#landing-page .box-3  th {
+    border: 1px solid black;
 }
-
-
-#landing-page .box-3 .pricing.show-mobile-flex .items{ 
+#landing-page .box-3  td,#landing-page .box-3  th {
+    width: 400px;
+    height: 40px;
+}
+#landing-page .box-3  th {
+    text-align: center;
     line-height: normal;
-    font-size: 17px;
+    font-size: 24px;
     letter-spacing: 2px;
-    margin: unset;
+    color: #FF6B00;
+    padding: 10px 0 0;
 }
-
-#landing-page .box-3 .pricing.show-mobile-flex .trade-items{ 
-    border-right: 1px solid;
-    text-align: right;
-    padding-right: 20px;
-}
-#landing-page .box-3 .pricing.show-mobile-flex .get-up-items{ 
-    text-align: left;
-    padding-left: 20px;
-}
+#landing-page .box-3  td {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 0 0;
+    color: #000;
+} 
 #landing-page .box-3 .note-1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+    color: #000;
 }
 
 #landing-page .box-3 .note-1 p{
     line-height: normal;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: 2px;
-    width: 50%;
+    width: 70%;
 }
 
 /* box-4 */
@@ -330,14 +314,15 @@
     background-repeat: no-repeat;
     padding: 40px 60px 70px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;
 }
 
 #landing-page .box-5 .content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
-    height: 100%;
+    height: 90%;
     flex-direction: column;
     width: 80%;
 }
@@ -346,7 +331,6 @@
     color: #FF6B00;
     font-weight: bold;
     text-align: left;
-    top: -100px;
     position: relative;
     margin: 0;
 }
@@ -621,19 +605,21 @@
     margin-bottom: 20px;
     color: #000;
 }
+
 #landing-page .box-7 .content .contact-details .mailchimp-container form button{
-    width: 235px;
-    height: 59px;
+    width: 200px;
+    height: 45px;
     background: #FF6B00;
     border-radius: 15px;
     font-family: Helvetica;
     line-height: 40px;
-    font-size: 15px;
+    font-size: 11px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: white; 
+    color: white;
     cursor: pointer;
 } 
+
 #landing-page .box-7 .content .contact-details .mailchimp-container .success-content{
     color: black;
     width: 70%;

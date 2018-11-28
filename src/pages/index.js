@@ -24,7 +24,7 @@ class Homepage extends React.Component {
     
     
     render() {
-        const siteTitle = "Prelove.sg";
+        const siteTitle = "Preloved.sg";
         
         const params = {
             slidesPerView: 4,
@@ -132,36 +132,32 @@ class Homepage extends React.Component {
                 </div>
                 <div className="container box-3" id="price">
                     <h2>Here’s our pricing guide*:</h2>
-                    <div className="pricing show-desktop">
-                        <div className="left">
-                            Trade in 1-10 items<br/>
-                            Trade in >10 items<br/>
-                            Trade in >20 items
-                        </div>
-                        <div className="right">
-                            Get up to 70 SGD/piece<br/>
-                            Get up to 90 SGD/piece<br/>
-                            Get up to 120 SGD/piece
-                        </div>
-                    </div>
-                    <div className="pricing show-mobile-flex">
-                        <div className="trade-in">
-                            <p className="trade-title title">Trade In</p>
-                            <p className="trade-items items">1-10 items</p>
-                            <p className="trade-items items">>10 items</p>
-                            <p className="trade-items items">>20 items</p> 
-                        </div>
-                        <div className="get-up">
-                            <p className="get-up-title title">Get up to</p>
-                            <p className="get-up-items items">70 SGD/piece</p>
-                            <p className="get-up-items items">90 SGD/piece</p>
-                            <p className="get-up-items items">120 SGD/piece</p>  
-                        </div>
-
-                    </div>
+                    
+                    <table className="pricing-table">
+                        <tr>
+                            <th>Trade In</th>
+                            <th>Get up to</th>
+                        </tr>
+                        <tr>
+                            <td className="trade-items">1-10 items</td>
+                            <td className="getup-items">S$70/pieces</td>
+                        </tr>
+                        <tr>
+                            <td className="trade-items">>10 items</td>
+                            <td className="getup-items">S$90/pieces</td>
+                        </tr>
+                        <tr>
+                            <td className="trade-items">>20 items</td>
+                            <td className="getup-items">S$120/pieces</td>
+                        </tr>
+                    </table> 
                     <div className="note-1">
-                        <p>
-                            *Prices stated are generally for items at least SGD$300-$500 in retail value. For premium items >$500 in retail value, prices are negotiable.
+                        <p className="show-mobile">
+                            *Prices stated are generally for items at least SGD$300-$500 in retail value. 
+                        </p>
+                        <p className="show-desktop">
+                        *Prices stated are generally for items at least SGD$300-$500 in retail value.<br/>
+                                For premium items >$500 in retail value, prices are negotiable.
                         </p>
                     </div>
                     <div className="divider-wrapper" >
@@ -199,7 +195,7 @@ class Homepage extends React.Component {
                     </div>
                 </div>
                 <div className="container box-5" id="brands">
-                    <div className="row content">  
+                    <div className="content">  
                         <h2>Brands we buy.</h2>
                         <div className="brandings show-desktop">
                             <div className="row grid-wrapper">
@@ -408,10 +404,10 @@ class Homepage extends React.Component {
                             </div> 
                         </div>
                         <div className="row grid-wrapper">
-                            <div className="col-6 contact-details">
+                            <div className="col-7 contact-details">
                             <MailChimpForm/>
                             </div>
-                            <div className="col-6 address-contact">
+                            <div className="col-5 address-contact">
                                 <div className="address">
                                     <div className="-title">
                                         <p>
@@ -432,7 +428,7 @@ class Homepage extends React.Component {
                                     </div>
                                     <div className="contact-context">
                                         <p>
-                                        hello@prelove.sg
+                                        hello@preloved.sg
                                         </p>
                                     </div>
                                 </div> 
@@ -448,7 +444,7 @@ class Homepage extends React.Component {
                 <div className="container box-8">
                     <div className="content">
                         <div className="title">
-                            Ready to start the<br/> year fresh?
+                            Ready to start the<br className="show-desktop"/> year fresh?
                         </div>                         
                         <div className="button-wrapper">
                             <a className="interested-btn button nav-contact-us">YES!</a>
