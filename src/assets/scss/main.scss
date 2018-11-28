@@ -1020,8 +1020,9 @@
 		}
 		
 		#landing-page .box-3 h2{
-			font-size: 20px;
+			font-size: 18px;
 			letter-spacing: 2px; 
+			margin-bottom: 10px;
 		}
 		#landing-page .box-4 .content .note-2{
 			font-size: 14px !important;  
@@ -1105,11 +1106,21 @@
 			margin-bottom: 2em !important;
 		}
 
+		#landing-page .box-3 .pricing-table th{ 
+			font-size: 16px;
+			letter-spacing: 2px;
+		}  
+
+		#landing-page .box-3 .pricing-table .trade-items,#landing-page .box-3 .pricing-table .getup-items{ 
+    
+			font-size: 14px;
+			letter-spacing: 2px;
+		} 
 		#landing-page .box-4 .content h2{
-			font-size: 20px; 
-			letter-spacing: 2px; 
-			padding: 40px 0;
-			margin: 0;
+			font-size: 20px !important; 
+			letter-spacing: 2px !important; 
+			padding: 40px 0 !important;
+			margin: 0 !important;
 		}
 		#landing-page .box-4 .content ol > li{
 			font-size: 18px !important;
@@ -1185,10 +1196,7 @@
 						}
 					}
 				}
-			}
-			#landing-page .box-3 h2{
-				margin-bottom: 5px !important;
-			}
+			} 
 			#landing-page .box-3{
 				padding: 60px 15px 40px!important;
 			}
@@ -1196,7 +1204,7 @@
 				margin: 15px 0 35px !important;
 			}
 			#landing-page .box-3 .note-1 p{
-				font-size: 12px !important;
+				font-size: 10px !important;
 				margin: 0 !important;
 				width: 80% !important;
 			}
@@ -1209,20 +1217,13 @@
 
 /* XXSmall */
 
-	@include breakpoint(xxsmall) {
-		#landing-page .box-3 .pricing.show-mobile-flex .trade-title, #landing-page .box-3 .pricing.show-mobile-flex .get-up-title{ 
-			margin: 0 10px 10px !important;
-		}
-		
-		#landing-page .box-3 .pricing.show-mobile-flex .trade-items{
-			padding-right: 10px !important;
-		}
-		#landing-page .box-3 .pricing.show-mobile-flex .get-up-items{
-
-			padding-left: 10px !important;
-		}
+	@include breakpoint(xxsmall) { 
 		#landing-page .box-3 .pricing.show-mobile-flex .items{
 			font-size: 14px !important;
+		}
+		#landing-page .box-2 .service .list .text{
+			font-size: 14px !important;
+			letter-spacing: 2px !important;
 		}
 		/* Basic */
 

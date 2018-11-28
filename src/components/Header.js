@@ -26,7 +26,7 @@ class Header extends React.Component {
                         <img src={minimizeWhite} />
                     </div>
                     <div className="header-title">
-                        <p> #PRELOVESG </p>
+                        <p> #PRELOVEDSG </p>
                     </div>
                     <div></div>
                 </div>
