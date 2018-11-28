@@ -195,7 +195,7 @@ class Homepage extends React.Component {
                     </div>
                 </div>
                 <div className="container box-5" id="brands">
-                    <div className="row content">  
+                    <div className="content">  
                         <h2>Brands we buy.</h2>
                         <div className="brandings show-desktop">
                             <div className="row grid-wrapper">
