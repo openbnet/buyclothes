@@ -16,7 +16,7 @@ class Footer extends React.Component {
                 </ul> */}
                 <div className="grid-wrapper">
                     <div className="col-12">
-                        <h3>Did not see brands on the list?<span><a href="#"> Let us know!</a></span></h3>
+                        <h3>Did not see brands on the list?<span><a href="mailto:hello#@preloved.sg"> Let us know!</a></span></h3>
                     </div>
                 </div>
             </section>
