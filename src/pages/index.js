@@ -394,7 +394,7 @@ class Homepage extends React.Component {
                     <div className="content">
                         <div className="context"> 
                             <div className="title">
-                                What's happens next?
+                                What happens next?
                             </div>
                             <div className="sub-title">
                                 <p> 
