@@ -55,13 +55,14 @@
 }
 
 #custom-header .header-container .nav-items .nav-item {
-	margin-right: 20px;
-	cursor: pointer;
-	text-decoration: none;
 	color: #000;
+    cursor: pointer;
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+	margin-right: 20px;
+	text-decoration: none;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 18px;
 }
 
 #custom-header .header-container .button-wrapper .contact-us-button{
@@ -611,8 +612,10 @@
     height: 228px;
 }
 
-#landing-page .box-7 .content .map {
-
+#landing-page .box-7 .content .map > div, 
+#landing-page .box-7 .content .map > div > div, 
+#landing-page .box-7 .content .map > div > div > div  {
+    position: relative !important;
 }
 
 #landing-page .box-7 .content .contact-details .mailchimp-container {
@@ -782,9 +785,10 @@
     line-height: normal;
 }
 #brandsearch-page .brand-group .grid-wrapper .brands-list .name{
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
+    font-family: "HelveticaNeueRoman", Tahoma, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     font-size: 22px;
     color: #000000;
