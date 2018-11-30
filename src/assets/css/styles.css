@@ -8,6 +8,12 @@
     src: url('../fonts/HelveticaNeueLight.ttf')  format('truetype');
 }
 
+/* HelveticaNueue Regular */
+@font-face {
+    font-family: "HelveticaNeueRoman";
+    src: url("../fonts/HelveticaNeue-Roman.otf") format("opentype");
+}
+
 /* HelveticaNueue Medium */
 @font-face {
     font-family: 'HelveticaNeueMedium';
@@ -575,23 +581,26 @@
     margin: 0 auto;
 }
 #landing-page .box-7 .content .context .title{
-    line-height: normal;
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 2px; 
+    line-height: normal;
     margin-bottom: 20px;
 }
 #landing-page .box-7 .content .context .sub-title{
-    line-height: 25px;
-    font-size: 16px;  
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+    font-size: 16px; 
     letter-spacing: 2px;  
+    line-height: 25px;
 }
 #landing-page .box-7 .content  .address ,#landing-page .box-7 .content  .contact{
-    display: flex;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 500;
     color: #000;
+    display: flex;
+    font-family: "HelveticaNeueRoman", Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 #landing-page .box-7 .content  .address .address-context,#landing-page .box-7 .content  .contact-context{
@@ -600,6 +609,10 @@
 #landing-page .box-7 .content  .map img{
     width: 417px;
     height: 228px;
+}
+
+#landing-page .box-7 .content .map {
+
 }
 
 #landing-page .box-7 .content .contact-details .mailchimp-container {
@@ -634,21 +647,22 @@
     color: #000;
 }
 
-/* #landing-page .box-7 .content .contact-details .mailchimp-container form button{
-    background: #FF6B00;
+#landing-page .box-7 .content .contact-details .mailchimp-container form button{
+    background-color: #FF6B00;
+    border: 0 none;
     border-radius: 15px;
     color: white;
     cursor: pointer;
-    font-family: Helvetica;
-    font-size: 11px;
-    height: 45px;
-    letter-spacing: 4px;
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    height: 55px;
+    letter-spacing: 3px;
     line-height: 40px;
     text-transform: uppercase;
-    width: 200px;
-}  */
+    width: 220px;
+}
 
-#landing-page .box-7 .content .contact-details .mailchimp-container form button{
+/* #landing-page .box-7 .content .contact-details .mailchimp-container form button{
     background-color: #FF6B00;
     border: 0 none;
     color: white;
@@ -660,7 +674,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 220px;
-}
+} */
 
 #landing-page .box-7 .content .contact-details .mailchimp-container .success-content{
     color: black;
@@ -697,10 +711,12 @@
 
 #landing-page .box-8 .title{	
     color: #FFFFFF;
-    line-height: 70px;
+    font-family: HelveticaNeueMedium;
     font-size: 64px;
-    text-align: center;
+    font-weight: bold;
     letter-spacing: 2px;
+    line-height: 70px;
+    text-align: center;
 }
 
 #landing-page .box-8 .content .button-wrapper{

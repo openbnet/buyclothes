@@ -6,6 +6,7 @@ import Swiper from 'react-id-swiper';
 import { Link } from 'gatsby'
 import Layout from '../components/layout';
 import MailChimpForm from '../components/mailChimpForm';
+import GoogleMaps from '../components/googleMaps.js';
 
 import '../assets/css/styles.css';
 
@@ -433,9 +434,13 @@ class Homepage extends React.Component {
                                     </div>
                                 </div> 
                                 <div className="map">
-                                    <a href="https://www.google.com.ph/maps/place/60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051/@1.3182389,103.8926074,16z/data=!4m13!1m7!3m6!1s0x31da1818677e43ff:0x9053328cc088d24b!2s60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051!3b1!8m2!3d1.3191725!4d103.8925563!3m4!1s0x31da1818677e43ff:0x9053328cc088d24b!8m2!3d1.3191725!4d103.8925563" target="_blank">
-                                        <img src={require('../assets/images/map.png')}/>
-                                    </a>
+                                    {
+                                        /*<a href="https://www.google.com.ph/maps/place/60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051/@1.3182389,103.8926074,16z/data=!4m13!1m7!3m6!1s0x31da1818677e43ff:0x9053328cc088d24b!2s60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051!3b1!8m2!3d1.3191725!4d103.8925563!3m4!1s0x31da1818677e43ff:0x9053328cc088d24b!8m2!3d1.3191725!4d103.8925563" target="_blank">
+                                            <img src={require('../assets/images/map.png')}/>
+                                        </a> */
+                                    }
+
+                                    <GoogleMaps google="" />
                                 </div>
                             </div> 
                         </div>
