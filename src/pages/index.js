@@ -447,7 +447,7 @@ class Homepage extends React.Component {
                             Ready to start the<br className="show-desktop"/> year fresh?
                         </div>                         
                         <div className="button-wrapper">
-                            <a className="interested-btn button nav-contact-us">YES!</a>
+                            <a className="interested-btn button nav-contact-us">Yes</a>
                         </div>
                     </div>
                 </div>

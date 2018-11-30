@@ -1,3 +1,19 @@
+/* 
+** Import Custom Fonts
+*/
+
+/* HelveticaNueue Light */
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeueLight.ttf')  format('truetype');
+}
+
+/* HelveticaNueue Medium */
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url('../fonts/HelveticaNeueMedium.ttf')  format('truetype');
+}
+
 
 /* Custom styles */
 .row{
@@ -42,10 +58,13 @@
     font-size: 18px;
 }
 
-#custom-header .header-container .button-wrapper .contact-us-button{ 
-    width: 200px;
-    height: 40px;
+#custom-header .header-container .button-wrapper .contact-us-button{
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
     font-size: 18px;
+    height: 55px;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 220px;
 }
 #custom-header .header-container.show-mobile-flex{  
     width: 100vw;
@@ -103,16 +122,23 @@
 }
 
 #landing-page .box-1 .details .button-wrapper {
-    width: 242px;
-    height: 44px;
-    border-radius: 15px;
+    width: 220px;
+    height: 55px;
+    /* border-radius: 15px; */
 }
 
 #landing-page .box-1 .details .button-wrapper .interested-btn{ 
-    line-height: 40px;
+    /* line-height: 40px;
     font-size: 15px;
     letter-spacing: 4px;
-    text-transform: uppercase;
+    text-transform: uppercase; */
+    border: 0 none;
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    height: 55px;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 220px;
 }
 
 #landing-page .box-1 .details{
@@ -466,7 +492,8 @@
 }
 
 #landing-page .box-6 .content .clothes-details .info{
-    font-family: Montserrat; 
+    /* font-family: Montserrat; */
+    font-family: "HelveticaNeueLight", Montserrat; 
     font-style: normal;
     line-height: normal;
     font-size: 12px;
@@ -477,7 +504,8 @@
 }
 
 #landing-page .box-6 .content .clothes-details .price{
-    font-family: Montserrat; 
+    /* font-family: Montserrat;  */
+    font-family: "HelveticaNeueLight", Montserrat; 
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -606,19 +634,33 @@
     color: #000;
 }
 
-#landing-page .box-7 .content .contact-details .mailchimp-container form button{
-    width: 200px;
-    height: 45px;
+/* #landing-page .box-7 .content .contact-details .mailchimp-container form button{
     background: #FF6B00;
     border-radius: 15px;
-    font-family: Helvetica;
-    line-height: 40px;
-    font-size: 11px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
     color: white;
     cursor: pointer;
-} 
+    font-family: Helvetica;
+    font-size: 11px;
+    height: 45px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    text-transform: uppercase;
+    width: 200px;
+}  */
+
+#landing-page .box-7 .content .contact-details .mailchimp-container form button{
+    background-color: #FF6B00;
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    height: 55px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
 
 #landing-page .box-7 .content .contact-details .mailchimp-container .success-content{
     color: black;
@@ -662,11 +704,22 @@
 }
 
 #landing-page .box-8 .content .button-wrapper{
-    border-radius: 15px; 
+    /* border-radius: 15px;  */
+    border: 0 none;
 }
 #landing-page .box-8 .content .button-wrapper .button{
-    width: 235px;
-    height: 59px;
+    /* height: 59px;
+    width: 235px; */
+    height: 55px;
+    width: 220px; 
+}
+
+#landing-page .box-8 .content .button-wrapper .button.nav-contact-us {
+    font-family: "HelveticaNeueMedium", Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    height: 55px;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 /* brand-search-page*/
