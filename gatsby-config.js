@@ -26,6 +26,16 @@ module.exports = {
       options: {
         endpoint: 'https://madthread.us17.list-manage.com/subscribe/post?u=936000290ca667d12dd8f65c0&amp;id=1c653d046b' // see instructions section below
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-W6J2WNL'",
+  
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false
+      },
+    },
   ]
 }
